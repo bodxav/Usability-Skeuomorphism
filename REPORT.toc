@@ -1,0 +1,24 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Theoretical concepts \& design principles}{3}
+\contentsline {subsection}{\numberline {2.1}Perceived affordance}{3}
+\contentsline {subsection}{\numberline {2.2}Natural mapping}{3}
+\contentsline {subsection}{\numberline {2.3}Feedback}{4}
+\contentsline {subsection}{\numberline {2.4}Constraints}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}Physical constraints}{5}
+\contentsline {subsubsection}{\numberline {2.4.2}Logical constraints}{5}
+\contentsline {subsubsection}{\numberline {2.4.3}Cultural constraints}{5}
+\contentsline {subsubsection}{\numberline {2.4.4}Semantic constraints}{5}
+\contentsline {subsection}{\numberline {2.5}Skeuomorphism}{5}
+\contentsline {subsection}{\numberline {2.6}Flat design}{5}
+\contentsline {section}{\numberline {3}Evolution of the computer-interface}{5}
+\contentsline {subsection}{\numberline {3.1}Command line interpreter}{5}
+\contentsline {subsection}{\numberline {3.2}Graphical interface \& computer mouse}{5}
+\contentsline {subsection}{\numberline {3.3}Touch interface}{5}
+\contentsline {subsection}{\numberline {3.4}Voice interface}{5}
+\contentsline {subsection}{\numberline {3.5}Neural interface}{5}
+\contentsline {section}{\numberline {4}Experiment}{5}
+\contentsline {subsection}{\numberline {4.1}Definition of the experiment}{5}
+\contentsline {subsection}{\numberline {4.2}Results analysis}{5}
+\contentsline {subsection}{\numberline {4.3}Comparison with previous studies}{5}
+\contentsline {section}{\numberline {5}Conclusion}{5}
