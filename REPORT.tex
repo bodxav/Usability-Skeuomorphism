@@ -47,11 +47,23 @@ Luc WILKIN
 \pagebreak
 \section{Introduction}
 
-Most tools we use today, from wristwatches and squirt guns to smartphones and industrial softwares, rely on sophisticated technology hidden from the user. This require that the user learn to use the tool
+Most tools we use today, from wristwatches and squirt guns to smartphones and industrial softwares, rely on sophisticated technology hidden from the user. This require the user to be taught how to use the tool, which can be done with manuals and trial-and-error, but also by designing the tool in such a way that its usage is both obvious and simple.\\
+
+While this has been done for centuries for physical objects using switches, knobs and buttons, the most recent computing devices tends to have a simplistic physical design (often reduced to a black surface with a touchscreen) and use abstract elements on the screen to interact with the user by touch, leaving the responsibility of design to the application creator.\\
+
+In this document, we concentrate on design trends in electronic tablet applications. In Sect.~\ref{sct:theory}, we present some of the basic design principles described in [CITATION NEEDED] which can be applied to the design of any object.\\
+
+Then, in Sect.~\ref{sct:history}, we show how those principles can be recognized in the evolution of the design of computer systems, concluding with the current trends in electronic tablets, namely skeuomorphism and flat design.\\
+
+Finally, in Sect.~\ref{sct:experiment}, we present experimentation results demonstrating how users react to those designs. One result is from our own experiment, in which we confronted various users to a skeuomorphic calculator application and to a flat one.\\
 
 \section{Theoretical concepts \& design principles}
-\subsection{Perceived affordance}
+\label{sct:theory}
+
+    \subsection{Perceived affordance}
+
 Perceived affordance represents the quality of an object to suggest its utilization. This concept is quite important in object-design due to the fact that it may represents the main source of information about the usage of the object. Indeed, people tends to read less and less the usage notice. In addition, this concept may reinforce the feeling of experience of a person for a given object.
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.40]{fig-report/switches-only.png}
@@ -59,12 +71,14 @@ Perceived affordance represents the quality of an object to suggest its utilizat
 \end{figure}
 
 Perceived affordance is not always the same as real affordance. Indeed, design can rarely explain the complete working of complex objects. The perceived affordance is only capable of showing primitive properties of its usage. Furthermore, a bad design may induce an usage more difficult than the correct design.%http://www.interaction-design.org/encyclopedia/affordances.html
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.20]{fig-report/bad-switches.jpg}
 \caption{What would you do in front of such a lift panel?}
 \end{figure}
-\subsection{Natural mapping}
+
+    \subsection{Natural mapping}
 Natural mapping is the concept of organizing controllers in the same arrangement as the objects on which they have an influence to guarantee the expected result. This principle will often lead to an increase in perceived affordance.\\
 
 A common example to illustrate this concept is the placement of the buttons that control the different stoves of your kitchen.It's obvious that the most left-top button will regulate the temperature of the most left-top stove.\\
@@ -90,7 +104,8 @@ A common example to illustrate this concept is the placement of the buttons that
 
 
 Unfortunately, this principle may sometimes induce extra design cost and may also depends on the point of view of the designer: Even if it seems logical for certain arrangement such stoves or the control of the electronic windows of the car, One can still doubt about the mapping of light switches(\textit{"Does this switch controls  the lights of the front of the room because it is above the others ?"}). %http://karikariboberry.blogspot.be/2008/09/natural-mapping.html
-\subsection{Feedback}
+
+    \subsection{Feedback}
 \newtheorem{mydef}{Definition}
 \begin{mydef}
 \textbf{THOMAS} : Je ne comprends pas la fin de cette définition.
@@ -98,12 +113,15 @@ Unfortunately, this principle may sometimes induce extra design cost and may als
 \end{mydef}
 
 In our case, feedback represents any action that could indicate to the user that its interaction with the item was taken into account. In certain cases, feedback can be done implicitly by the quality and the design of the object itself. For example, when a push button is  pressed, one can hear a clicking sound. On the other hand, feedback often requires, in our modern technologies, additional functions like vibrating or emitting sounds that corresponds to states of the device. Theses retro-actions have to provide enough information to the user in order to avoid his frustration about a mistaken usage.
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{fig-report/retro-action-speaking.jpg}
 \caption{After the user gives a command, the device emits a sound to confirm that it is analyzing the request}
 \end{figure}
-\subsection{Additional design principles}
+
+    \subsection{Additional design principles}
+
 As presented in %Source vers l'article...
 , one can also add two principles to a good design:
 \begin{itemize}
@@ -129,26 +147,34 @@ As presented in %Source vers l'article...
       \end{minipage}
   \end{minipage}
 
-\subsection{Constraints}
+    \subsection{Constraints}
 
 
-\subsubsection{Physical constraints}
-\subsubsection{Logical constraints}
-\subsubsection{Cultural constraints}
-\subsubsection{Semantic constraints}
-\subsection{Skeuomorphism}
-\subsection{Flat design}
+        \subsubsection{Physical constraints}
+        \subsubsection{Logical constraints}
+        \subsubsection{Cultural constraints}
+        \subsubsection{Semantic constraints}
 
 \section{Evolution of the computer-interface}
-\subsection{Command line interpreter}
-\subsection{Graphical interface \& computer mouse}
-\subsection{Touch interface}
-\subsection{Voice interface}
-\subsection{Neural interface}
+\label{sct:history}
+
+    \subsection{Command line interpreter}
+    \subsection{Graphical interface and computer mouse}
+    \subsection{Touch interface}
+    \subsection{Voice interface}
+    \subsection{Neural interface}
+    \subsection{Current trends in touch interface}
+        \subsubsection{Skeuomorphism}
+        \subsubsection{Flat design}
+
+
 \section{Experiment}
-\subsection{Definition of the experiment}
-\subsection{Results analysis}
-\subsection{Comparison with previous studies}
+\label{sct:experiment}
+
+    \subsection{Definition of the experiment}
+    \subsection{Results analysis}
+    \subsection{Comparison with previous studies}
+
 \section{Conclusion}
 %Bibliography
 \end{document}
