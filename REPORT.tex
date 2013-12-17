@@ -70,7 +70,7 @@ Perceived affordance represents the quality of an object to suggest its utilizat
 \caption{By their forms, buttons,switches or knobs often suggest their working.}
 \end{figure}
 
-Perceived affordance is not always the same as real affordance. Indeed, design can rarely explain the complete working of complex objects. The perceived affordance is only capable of showing primitive properties of its usage. Furthermore, a bad design may induce an usage more difficult than the correct design.%http://www.interaction-design.org/encyclopedia/affordances.html
+Perceived affordance is not always the same as real affordance. Indeed, design can rarely explain the complete working of complex objects. The perceived affordance is only capable of showing primitive properties of its usage. Furthermore, a bad design may induce an usage more difficult than the correct design\cite{affordancesMads}.
 
 \begin{figure}[h]
 \centering
@@ -96,20 +96,20 @@ A common example to illustrate this concept is the placement of the buttons that
           \begin{figure}[H]
                     \centering
               \includegraphics[scale=0.4]{fig-report/NormanBurners.jpg}
-              \caption{These designs work only if you have the same assumption as the designer}
+              \caption{These designs work only if you have the same assumption as the designer\cite{stoveMapping}}
           \end{figure}
       \end{minipage}
   \end{minipage}
   \bigskip
 
 
-Unfortunately, this principle may sometimes induce extra design cost and may also depends on the point of view of the designer: Even if it seems logical for certain arrangement such stoves or the control of the electronic windows of the car, One can still doubt about the mapping of light switches(\textit{"Does this switch controls  the lights of the front of the room because it is above the others ?"}). %http://karikariboberry.blogspot.be/2008/09/natural-mapping.html
+Unfortunately, this principle may sometimes induce extra design cost and may also depends on the point of view of the designer: Even if it seems logical for certain arrangement such stoves or the control of the electronic windows of the car, One can still doubt about the mapping of light switches(\textit{"Does this switch controls  the lights of the front of the room because it is above the others ?"}).
 
     \subsection{Feedback}
 \newtheorem{mydef}{Definition}
 \begin{mydef}
-\textbf{THOMAS} : Je ne comprends pas la fin de cette définition.
-\textit{\textbf{Feedback}} is the return of a fraction of the output signal from an amplifier, microphone, or other device to the input of the same device; sound distortion produced by this.%http://www.oxforddictionaries.com/definition/english/feedback
+\textit{\textbf{Feedback}}: sending back to the user information about what action has actually been done, what result has been accomplished.
+\cite{Norman02}
 \end{mydef}
 
 In our case, feedback represents any action that could indicate to the user that its interaction with the item was taken into account. In certain cases, feedback can be done implicitly by the quality and the design of the object itself. For example, when a push button is  pressed, one can hear a clicking sound. On the other hand, feedback often requires, in our modern technologies, additional functions like vibrating or emitting sounds that corresponds to states of the device. Theses retro-actions have to provide enough information to the user in order to avoid his frustration about a mistaken usage.
@@ -122,7 +122,7 @@ In our case, feedback represents any action that could indicate to the user that
 
     \subsection{Additional design principles}
 
-As presented in %Source vers l'article...
+As presented in \cite{Norman02}
 , one can also add two principles to a good design:
 \begin{itemize}
 \item \textbf{Provide a good conceptual model}: The idea is to provide a precise information model about the good usage of the item, or the way to maintain it. Written instructions should guarantee the good usage of the item. The design of such scheme is really important and should be extremely clear.
@@ -142,18 +142,50 @@ As presented in %Source vers l'article...
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
                     \centering
+               \includegraphics[scale=0.7]{fig-report/voip-phone.jpg}
               \caption{This VoIP phone has a big display to propose multiple commands}
           \end{figure}
       \end{minipage}
   \end{minipage}
 
     \subsection{Constraints}
-
-
+	In addition with affordances, usage of objects is also induced by natural constraints such as physical constraints, logical constraints, cultural constraints, \ldots. These implicit rules may depend on the knowledge of the user but might increase perceived affordance. In the following subsections, each type of constraints will be explained and illustrated with an example.
         \subsubsection{Physical constraints}
+        These constraints are the strongest ones because they reduce considerably the number of possible 	usages: Even without any attempt, the user will often be able to obviously discard  alternatives. They do not or poorly depend on the knowledge of the user.\\
+        
+        $\underline{Example:}$\\
+        When a builder has just finished his work, he has to refill his toolbox which contains dedicated 		slots. It's completely impossible for him to put his hammer into the slot initially defined for a screwdriver.
+        \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.1]{fig-report/toolbox.jpg}
+        \end{figure}
+        \subsubsection{Semantic constraints}        
+       In opposition to the physical constraints, semantic constraints require a good knowledge about the situation in which the object should be use.\\
+       
+        $\underline{Example:}$\\
+        A simple example could be the fact to tie your shoes. It's quite impossible for a novice to make it correctly on the first time. After a while, such action will appear simple and logical.
+        \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.3]{fig-report/tie_your_shoes.jpg}
+        \end{figure}
+        \subsubsection{Cultural constraints}        
+        These constraints are the consequences of cultural conventions that were instanced for , sometimes, 	several years. These constraints can be considered as arbitrary due to the fact in most of the cases, several possible alternatives could be applicable. Indeed such constraints does not affect the semantic or the physical usage of the given object. Unfortunately, these constraints are not always constant and may depend on the geographic and temporal context. Furthermore, problem could arise when such constraints has to be decided for new items\\
+       
+        $\underline{Example:}$\\
+        A basic example could be the disposition and the color of the traffic lights. In our country, the green color represents the fact that you can go on and traffic lights are positioned in a vertical column . In opposition, in Japan, traffic lights may be composed of blue, orange and red lights, and could be displayed as a horizontal row.
+        \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.1]{fig-report/japan-traffic-light.jpg}
+        \end{figure}
+ 
         \subsubsection{Logical constraints}
-        \subsubsection{Cultural constraints}
-        \subsubsection{Semantic constraints}
+        These constraints call to the good-sense of the user. No physical or cultural knowledge is required here. The only thing that matters here is to confirm the first and logical assumption of user through design choices. Such constraints are often linked to natural mapping.\\
+       
+        $\underline{Example:}$\\
+        The most trivial example could be the fact that a left switch will always activate the leftmost light.
+        
+
+
 
 \section{Evolution of the computer-interface}
 \label{sct:history}
@@ -176,5 +208,6 @@ As presented in %Source vers l'article...
     \subsection{Comparison with previous studies}
 
 \section{Conclusion}
-%Bibliography
+\bibliographystyle{plain}
+\bibliography{bibUsability}
 \end{document}
