@@ -6,7 +6,6 @@
 \setlength{\textwidth}{6.25in}
 
 \usepackage{color}
-\usepackage{listings}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{float}
@@ -24,42 +23,7 @@
 \definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
  \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
-\lstset{language=Java,
-basicstyle=\ttfamily,
-keywordstyle=\color{javapurple}\bfseries,
-stringstyle=\color{javared},
-commentstyle=\color{javagreen},
-morecomment=[s][\color{javadocblue}]{/**}{*/},
-numbers=left,
-numberstyle=\tiny\color{black},
-stepnumber=2,
-numbersep=10pt,
-tabsize=4,
-showspaces=false,
-showstringspaces=false}
 
-\lstset{
-language=R,
-basicstyle=\scriptsize\ttfamily\color{javadocblue},
-commentstyle=\ttfamily\color{javagreen},
-numbers=left,
-numberstyle=\ttfamily\color{javagreen}\footnotesize,
-stepnumber=1,
-numbersep=5pt,
-backgroundcolor=\color{white},
-showspaces=false,
-showstringspaces=false,
-showtabs=false,
-frame=single,
-tabsize=2,
-captionpos=b,
-breaklines=true,
-breakatwhitespace=false,
-title=\lstname,
-escapeinside={},
-keywordstyle={},
-morekeywords={}
-}
 
 \begin{document}
 \title{\textbf{Usability \& Skeuomorphism}}
@@ -128,11 +92,42 @@ Unfortunately, such principle may sometimes induce extra-design cost and may als
 \textit{\textbf{Feedback}} is the return of a fraction of the output signal from an amplifier, microphone, or other device to the input of the same device; sound distortion produced by this.%http://www.oxforddictionaries.com/definition/english/feedback
 \end{mydef}
 
-In our case, feedback represents any action that could indicate to the user that its interaction with the item was taken into account.
+In our case, feedback represents any action that could indicate to the user that its interaction with the item was taken into account. In certain cases, feedback can be done implicitly by the quality and the design of the object itself. By example, when a push button is  pressed, one can simply hear a little *click* sound. On the other hand, feedback often requires, in our modern technologies, additional functions like vibrating or emitting sounds that corresponds to states of the device. Theses retro-action has to provide enough information to the user in order to avoid his frustration about a mistaken usage.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{retro-action-speaking.jpg}
+\caption{After the user has finished to give his command, the device will emit a sound to notice him that it is analysing his request}
+\end{figure}
+\subsection{Additional design principles}
+As presented in %Source vers l'article...
+, one can also add two principles to a good design:
+\begin{itemize}
+\item \textbf{Provide a good conceptual model}: The idea is to provide a precise information model about the good usage of the item, or the way to maintain it. Written instructions should guarantee the good usage of the item. The design of such scheme is really important and should be extremely clear.
+\item \textbf{Make things visible}: Certain of our modern items can be seen as real complex state machines due to the number of actions they can propose. The basic idea behind this principle is to provide a display which shows the current state and the available actions. A good example to this is the usage of a new voip telephone which allow a user to start a conference with several other people. Such telephone are often equipped with a large display which can show different contacts number, propose features to start conference or even to place a call on hold in order to answer to another call.
+\end{itemize}
 
-
+ \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+          \centering
+              \includegraphics[scale=0.4]{can-opener}
+              \caption{Does such model give enough information about the usage of a can-opener ?}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+                    \centering
+	\includegraphics[scale=0.8]{voip-phone.jpg}
+              \caption{These designs are eligible if you have the same assumption as the producer}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
 
 \subsection{Constraints}
+
+
 \subsubsection{Physical constraints}
 \subsubsection{Logical constraints}
 \subsubsection{Cultural constraints}
