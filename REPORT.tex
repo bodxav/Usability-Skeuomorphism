@@ -58,6 +58,12 @@ Then, in Sect.~\ref{sct:history}, we show how those principles can be recognized
 Finally, in Sect.~\ref{sct:experiment}, we present experimentation results demonstrating how users react to those designs. One result is from our own experiment, in which we confronted various users to a skeuomorphic calculator application and to a flat one.\\
 
 \section{Theoretical concepts and design principles}
+When someone wants to use an object, there could exists hundreds of usage alternatives. To limit those alternatives, the design can highlight two main concepts:
+\begin{enumerate}
+\item Perceived affordance in order to suggest the good alternatives
+\item Constraints in order to limit the number of bad alternatives
+\end{enumerate}
+
 \label{sct:theory}
 
     \subsection{Perceived affordance}
@@ -125,7 +131,7 @@ In our case, feedback represents any action that could indicate to the user that
 As presented in \cite{Norman02}
 , one can also add two principles to a good design:
 \begin{itemize}
-\item \textbf{Provide a good conceptual model}: The idea is to provide a precise information model about the good usage of the item, or the way to maintain it. Written instructions should guarantee the good usage of the item. The design of such scheme is really important and should be extremely clear.
+\item \textbf{Provide a good conceptual model}: The idea is to provide a precise information model about the good usage of the object, or the way to maintain it. By following instructions, user should be guarantee to use the item correctly. The design of such scheme is really important and should be extremely clear. Indeed, if it's not, the user may be frustrated to not understand why it's not working.
 \item \textbf{Make things visible}: Certain of our modern items can be seen as real complex state machines due to the number of actions they can propose. The basic idea behind this principle is to provide a display which shows the current state and the available actions. A good example to this is the usage of a new VoIP telephone which allow a user to start a conference with several other people. Such telephone are often equipped with a large display which can show different contacts number, propose features to start conference or even to place a call on hold in order to answer to another call.
 \end{itemize}
 
@@ -134,8 +140,8 @@ As presented in \cite{Norman02}
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
           \centering
-              \includegraphics[scale=0.4]{fig-report/can-opener}
-              \caption{Does such model give enough information about the usage of a can-opener ?}
+              \includegraphics[scale=0.1]{fig-report/conceptual.jpg}
+              \caption{The user can use control A to regulate temperature and control B to define the balance of cold air for the freezer and the fresh food. This scheme was inspired by a figure in  \cite{Norman02}}
           \end{figure}
       \end{minipage}
       \hspace{0.05\linewidth}
