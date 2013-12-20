@@ -49,7 +49,9 @@ Luc WILKIN
 
 Most tools we use today, from wristwatches and squirt guns to smartphones and industrial softwares, rely on sophisticated technology hidden from the user. This require the user to be taught how to use the tool, which can be done with manuals and trial-and-error, but also by designing the tool in such a way that its usage is both obvious and simple.\\
 
-While this has been done for centuries for physical objects using switches, knobs and buttons, the most recent computing devices tends to have a simplistic physical design (often reduced to a black surface with a touchscreen) and use abstract elements on the screen to interact with the user by touch, leaving the responsibility of design to the application creator.\\
+While this has been done for centuries for physical objects using buttons, elaborate shapes, different materials, etc, the most recent computing devices tends to have a simplistic physical design (often reduced to a black surface with a touchscreen) and use software elements on the screen to interact with the user by touch, leaving the responsibility of design to the application creator.\\
+
+According to recent market research (\cite{ABI-android}), the iPad from Apple is still the most sold tablet in the world. Its user base is so huge that several companies make their entire revenue by selling apps for it. In an App Store containing almost a million different apps (\cite{iOs61}), users trying to find an app for a particular use may find dozens of different iterations. Studying how to apply design principles in tablet application design may help to make an application easy to use and to understand, and thus standing out against competitors.\\
 
 In this document, we concentrate on design trends in electronic tablet applications. In Sect.~\ref{sct:theory}, we present some of the basic design principles described in \cite{Norman02} which can be applied to the design of any object.\\
 
@@ -58,7 +60,7 @@ Then, in Sect.~\ref{sct:history}, we show how those principles can be recognized
 Finally, in Sect.~\ref{sct:experiment}, we present experimentation results demonstrating how users react to those designs. One result is from our own experiment, in which we confronted various users to a skeuomorphic calculator application and to a flat one.\\
 
 \section{Theoretical concepts and design principles}
-When someone wants to use an object, there could exists hundreds of usage alternatives. To limit those alternatives, the design can highlight two main concepts:
+When using an object, there could exist hundreds of way to interact with it. Design can be used to highlight the good usage of the object using two concept:
 \begin{enumerate}
 \item Perceived affordance in order to suggest the good alternatives
 \item Constraints in order to limit the number of bad alternatives
@@ -68,7 +70,7 @@ When someone wants to use an object, there could exists hundreds of usage altern
 
     \subsection{Perceived affordance}
 
-Perceived affordance represents the quality of an object to suggest its utilization. This concept is quite important in object-design due to the fact that it may represents the main source of information about the usage of the object. Indeed, people tends to read less and less the usage notice. In addition, this concept may reinforce the feeling of experience of a person for a given object.
+Perceived affordance represents the quality of an object that suggest its utilization. This concept is very important in object-design due to the fact that it may represents the main source of information about the usage of the object. Indeed, people tends to not read the usage notice. In addition, this concept may reinforce the feeling of experience of a person for a given object.
 
 \begin{figure}[h]
 \centering
@@ -109,7 +111,7 @@ A common example to illustrate this concept is the placement of the buttons that
   \bigskip
 
 
-Unfortunately, this principle may sometimes induce extra design cost and may also depends on the point of view of the designer: Even if it seems logical for certain arrangement such stoves or the control of the electronic windows of the car, One can still doubt about the mapping of light switches(\textit{"Does this switch controls  the lights of the front of the room because it is above the others ?"}).
+Unfortunately, this principle may sometimes induce extra design cost and may also depends on the point of view of the designer: even if it seems logical for certain arrangement such stoves or the control of the electronic windows of the car, one can still doubt about the mapping of light switches(\textit{"Does this switch controls  the lights of the front of the room because it is above the others ?"}).
 
     \subsection{Feedback}
 \newtheorem{mydef}{Definition}
@@ -128,11 +130,11 @@ In our case, feedback represents any action that could indicate to the user that
 
     \subsection{Additional design principles}
 
-As presented in \cite{Norman02}
-, one can also add two principles to a good design:
+As presented in \cite{Norman02}, one can also add two principles to a good design:
 \begin{itemize}
-\item \textbf{Provide a good conceptual model}: The idea is to provide a precise information model about the good usage of the object, or the way to maintain it. By following instructions, user should be guarantee to use the item correctly. The design of such scheme is really important and should be extremely clear. Indeed, if it's not, the user may be frustrated to not understand why it's not working.
-\item \textbf{Make things visible}: Certain of our modern items can be seen as real complex state machines due to the number of actions they can propose. The basic idea behind this principle is to provide a display which shows the current state and the available actions. A good example to this is the usage of a new VoIP telephone which allow a user to start a conference with several other people. Such telephone are often equipped with a large display which can show different contacts number, propose features to start conference or even to place a call on hold in order to answer to another call.
+    \item \textbf{Provide a good conceptual model}: The idea is to provide a precise information model about the good usage of the object, or the way to maintain it. By following instructions, user should be guarantee to use the item correctly. The design of such scheme is really important and should be extremely clear. Indeed, if it's not, the user may be frustrated and not understand why it's not working.
+
+    \item \textbf{Make things visible}: Certain of our modern items can be seen as real complex state machines due to the number of actions they can propose. The basic idea behind this principle is to provide a display which shows the current state and the available actions. A good example to this is the usage of a new VoIP telephone which allow a user to start a conference with several other people. Such telephone are often equipped with a large display which can show different contacts number, propose features to start conference or even to place a call on hold in order to answer to another call.
 \end{itemize}
 
  \begin{minipage}{\linewidth}
@@ -155,30 +157,32 @@ As presented in \cite{Norman02}
   \end{minipage}
 
     \subsection{Constraints}
-	In addition with affordances, usage of objects is also induced by natural constraints such as physical constraints, logical constraints, cultural constraints, \ldots. These implicit rules may depend on the knowledge of the user but might increase perceived affordance. In the following subsections, each type of constraints will be explained and illustrated with an example.
+    In addition to affordances, usage of objects is also induced by different types of constraints. These implicit rules may depend on the knowledge of the user but might increase perceived affordance. In the following subsections, each type of constraints will be explained and illustrated with an example.
         \subsubsection{Physical constraints}
         These constraints are the strongest ones because they reduce considerably the number of possible 	usages: Even without any attempt, the user will often be able to obviously discard  alternatives. They do not or poorly depend on the knowledge of the user.\\
 
         $\underline{Example:}$\\
-        When a builder has just finished his work, he has to refill his toolbox which contains dedicated 		slots. It's completely impossible for him to put his hammer into the slot initially defined for a screwdriver.
+        When a builder has just finished his work, he has to refill his toolbox which contains dedicated slots. Due to the design of the toolbox, it's completely impossible for him to put, for example, his hammer into the slot initially defined for a screwdriver.
         \begin{figure}[h]
         \centering
         \includegraphics[scale=0.1]{fig-report/toolbox.jpg}
         \end{figure}
+
         \subsubsection{Semantic constraints}
-       In opposition to the physical constraints, semantic constraints require a good knowledge about the situation in which the object should be used.\\
+       In opposition to the physical constraints, semantic constraints require a good knowledge of the situation in which the object should be used.\\
 
         $\underline{Example:}$\\
-        A simple example is shoe laces. It's difficult for a novice to do it correctly the first time. After a while, such actions will appear simple and logical.
+        It's difficult for a novice to do tie his shoes correctly the first time. After a while however, it appears simple and logical.
         \begin{figure}[h]
         \centering
         \includegraphics[scale=0.3]{fig-report/tie_your_shoes.jpg}
         \end{figure}
+
         \subsubsection{Cultural constraints}
         These constraints are the consequences of cultural conventions which have existed for several years. These constraints can be considered arbitrary because in most of the cases, several possible alternatives could be applicable. Indeed such constraints do not affect the semantic or the physical usage of the given object. Unfortunately, these constraints may change depending on the the geographical and temporal context. Furthermore, problems could arise when such constraints have to be decided for new items\\
 
         $\underline{Example:}$\\
-        A basic example could be the disposition and the color of the traffic lights. In western countries, the green color represents the fact that you can go on and traffic lights are positioned in a vertical column . In opposition, in Japan, traffic lights may be composed of blue, orange and red lights, and could be displayed as a horizontal row.
+        A basic example could be the disposition and the color of the traffic lights. In western countries, the green color represents the fact that you can go on and traffic lights are positioned in a vertical column . In Japan however, traffic lights may be composed of blue, orange and red lights, and could be displayed as a horizontal row.
         \begin{figure}[h]
         \centering
         \includegraphics[scale=0.1]{fig-report/japan-traffic-light.jpg}
@@ -189,9 +193,6 @@ As presented in \cite{Norman02}
 
         $\underline{Example:}$\\
         The most trivial example could be the fact that a left switch will always activate the leftmost light.
-
-
-
 
 \section{Evolution of the computer-interface}
 \label{sct:history}
@@ -206,11 +207,17 @@ As presented in \cite{Norman02}
         \subsubsection{Flat design}
 
 
-\section{Experiment}
+\section{Experiments}
 \label{sct:experiment}
 
     \subsection{Definition of the experiment}
+
+    To compare skeuomorph and Flat design, we presented our subjects with two different calculator applications on iPad. One had a familiar skeuomorph design and the other had an original but intuitive design, based on Flat principles. After a quick demonstration of both apps, the subject was asked to answer simple questions using both applications.\\
+
+    % Figure showing the two apps...
+
     \subsection{Results analysis}
+
     \subsection{Comparison with previous studies}
 
 \section{Conclusion}
