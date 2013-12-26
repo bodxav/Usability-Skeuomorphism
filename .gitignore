@@ -1,7 +1,10 @@
-REPORT.aux
-REPORT.fdb_latexmk
-REPORT.fls
-REPORT.log
-REPORT.pdf
-REPORT.synctex.gz
-REPORT.toc
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.synctex.gz
+*.toc
+*.blg
+*.dvi
+*.bbl
