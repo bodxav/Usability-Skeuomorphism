@@ -1,0 +1,469 @@
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{Warsaw}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{beaver} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  \setbeamertemplate{footline}[frame number]
+}
+
+
+\usepackage[english]{babel}
+\usepackage{chronology}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{algorithm}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage[noend]{algorithmic}
+\usepackage{hyperref}
+
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{tikz}
+
+\title {Usability \& Skeuomorphism}
+\subtitle {INFO-F-501 Information technology in society}
+\author{Thomas~Chapeaux  \and Bernard~Mayeur \and Xavier~Bodart }
+\institute[shortinst]{Université Libre de Bruxelles \\ Belgium}
+\date{December 2013}
+
+\begin{document}
+
+\maketitle{}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Context}
+
+\subsection{Design principles}
+
+\begin{frame}{Outline}
+    \tableofcontents[currentsection]
+\end{frame}
+
+
+
+\begin{frame}{Perceived affordance}
+	\begin{block}{Perceived affordance}
+	Perceived affordance is the quality of an object that suggests how it might be used.
+	\end{block}
+	\begin{figure}[ht]
+	\includegraphics[scale=0.3]{switches.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Natural mapping}
+	\begin{block}{Natural mapping}
+	The proper and natural arrangements for the relations between controls and their 	movements to the outcome from such action into the world. 
+	%The real function of natural mappings is to reduce the need for any information 	from a user’s memory to perform a task.
+	\end{block}
+	\begin{figure}[ht]
+	\includegraphics[scale=0.3]{stove_natural.png}
+	\end{figure}
+	\end{frame}
+
+\begin{frame}{Feedback}
+	\begin{block}{Feedback}
+	Sending back to the user information about what action has actually been done, what result has been accomplished.
+	\end{block}
+	\begin{figure}[ht]
+	\includegraphics[scale=0.3]{retro-action-speaking.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Logical constraints}
+    \begin{itemize}
+    		\item User-friendliness
+    		\item Call to the human good-sense
+            \item Can be induced by natural mapping
+    		\item Car windows switches   
+    \end{itemize}
+     \begin{figure}
+             \includegraphics[scale=0.25]{window.jpg}
+             \end{figure}
+\end{frame}
+              
+\begin{frame}{Physical constraints}
+    %Left switch for the left lights in a room%
+    		 \begin{itemize}
+    		 \item Strongest constraints
+    		 \item Constrained by physical laws
+    		 \item Toolbox
+    		 \end{itemize}
+             \begin{figure}
+             \includegraphics[scale=0.1]{toolbox.jpg}
+             \end{figure}
+             
+	%Flat key in a flat keyhole%
+\end{frame}
+
+\begin{frame}{Cultural constraints}
+    \begin{itemize}
+		\item Long term learning
+    		\item Known situations that can be replicated
+    		\item Not universal   
+    \end{itemize}
+    \begin{figure}[ht]
+    \includegraphics[scale=0.1]{japan-traffic-light.jpg}
+    \end{figure}
+\end{frame}
+    
+\begin{frame}{Semantic constraints}
+    \begin{itemize}
+    \item Impossible at first try
+    \item Short term learning
+    \end{itemize}
+    \begin{figure}
+    \includegraphics[scale=0.4]{tie_your_shoes.jpg}
+    \end{figure}
+\end{frame}
+
+\subsection{History of IT design}
+
+\begin{frame}{Outline}
+    \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Evolution in IT:Timeline}
+
+\begin{enumerate}
+\item \textbf{1920} Concept of vocal interface: Radio rex
+\item \textbf{1960$\rightarrow$1965} Command line interface invention
+\item \textbf{1963} Invention of the mouse
+\item \textbf{1965$\rightarrow$1985} Massive utilization of CLI
+\item \textbf{1970} Neural activity study on monkeys
+\item \textbf{1973} First utilisation of a touchscreen (CERN)
+\item \textbf{1980 $\rightarrow$ now} Utilization of graphical interface
+\item \textbf{early 1980's} Standardization of the mouse
+\item \textbf{1983} First commercialized touchscreen computer (by HP)
+\item \textbf{1990's $\rightarrow$ now} Standardization of touch interface(e.g PDA)
+\item \textbf{end of 1990's $\rightarrow$ now} Standardization of vocal interface(e.g Dragon naturally speaking)
+\item \textbf{2000} First proving results of neural interface
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Evolution in IT: Command line interface}
+
+\begin{itemize}
+\item Command interpreter
+\item Lack of affordance
+\end{itemize}
+	\begin{figure}
+			  \begin{minipage}{5cm}
+				  \includegraphics[width=8cm]{terminal.png}
+			  \end{minipage}
+		
+		\end{figure}
+\end{frame}
+\begin{frame}{Evolution in IT: Mouse \& Graphical interface}
+\begin{itemize}
+\item Used first to be able to navigate into the NLS
+\item Coupled with graphical itnerface
+\item Invented by Xerox and standardized by Apple
+\item Gain of affordance + natural mapping + feedback
+\end{itemize}
+
+\begin{figure}
+\raggedleft
+	   \begin{minipage}{5cm}
+				  \includegraphics[width=3cm]{mice.jpg}
+			  \end{minipage}
+			  	   \begin{minipage}{5cm}
+				  \includegraphics[width=2cm]{doug.jpg}
+			  \end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Evolution in IT: Touch interface}
+\begin{itemize}
+\item Multiple technologies
+\item Natural affordance $\rightarrow$ Mouse $=$ Finger
+\item Instant feedback
+\item Complex operations using multiple finger
+\end{itemize}
+\begin{figure}[ht]
+\includegraphics[scale=0.3]{multitouch_gestures_trackpad_2.jpg}
+\end{figure}
+\end{frame}
+\begin{frame}{Evolution in IT: Vocal interface}
+\begin{itemize}
+\item From isolated words to spontaneous speech
+\item 2 main evaluation criteria
+\begin{itemize}
+	\item Speed
+	\item Accuracy
+\end{itemize}
+\item Grant maximum usability if nice trained.
+\end{itemize}
+\begin{figure}[ht]
+\begin{minipage}[b]{0.30\linewidth}
+\centering
+\includegraphics[width=\textwidth]{radio-rex.jpg}
+
+
+\end{minipage}
+\hspace{0.15cm}
+\begin{minipage}[b]{0.40\linewidth}
+\centering
+\includegraphics[width=\textwidth]{recognition-process.png}
+
+
+\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Evolution in IT : Neuronal interface}
+\begin{itemize}
+\item Extremely expensive (Still in research)
+\item Invasive or Non-invasive interface
+\item Matt Nagle case
+\end{itemize}
+\begin{figure}[ht]
+\begin{minipage}[b]{0.30\linewidth}
+\centering
+\includegraphics[width=\textwidth]{matt-nagle.jpg}
+
+
+\end{minipage}
+\hspace{0.15cm}
+\begin{minipage}[b]{0.40\linewidth}
+\centering
+\includegraphics[width=\textwidth]{brain-chip.jpg}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+\subsection{Touchscreen interface: Flat vs. Skeuomorphism}
+
+\begin{frame}{Outline}
+    \tableofcontents[currentsection]
+\end{frame}
+
+
+	\begin{frame}{Skeuomorphism}
+	\begin{block}{Skeuomorph}
+	An object or feature which imitates the design of a similar artefact made from another material.
+	\end{block}
+	\begin{itemize}
+	\item Skeuos: $\sigma \kappa \varepsilon \upsilon {\rm o} \zeta$ = Tool(or container)
+	\item Morphê: $\mu {\rm o} \rho \varphi \eta$ = shape
+	\item Applied to physical and computer/mobile interfaces
+	\end{itemize}
+        \begin{figure}
+    \includegraphics[scale=0.25]{idial.jpg}
+    \end{figure}
+    
+
+	\end{frame}
+	\begin{frame}{Flat design}
+	\begin{block}{Flat design}
+	Flat design is a minimalistic design approach that emphasizes usability. It features clean, open, crisp edges, bright colours and two-dimensional/flat illustrations.
+	\end{block}
+    \begin{figure}
+    \includegraphics[scale=0.35]{dial-flat.png}
+    \end{figure}
+	
+	\end{frame}
+    
+    \begin{frame}
+      \begin{columns}[t]
+          \begin{column}{5cm}
+           \Large\textbf{Skeuomorph\\}
+           \normalsize
+             	\textbf{Pros}
+                  \begin{itemize}
+                  \item Affordance gained by design
+                  \item Attractive design for new users
+                  \item User-friendly
+                  \end{itemize}
+                  \textbf{Cons}
+                  \begin{itemize}
+                  \item Can introduce delays
+                  \item Can be felt as not serious for working applications
+                  \item Time spent for the design and not the application
+                  \item Does not always represent the trend of a given object
+                  \end{itemize}
+            \end{column}
+            \begin{column}{5cm}
+          \LARGE\textbf{Flat-design\\}
+          \normalsize
+       \textbf{Pros}
+          \begin{itemize}
+          \item As simple as possible
+          \item Load times and "stylesheets" tends to be smaller
+          \item Enhancing of the usability
+          \end{itemize}
+          \textbf{Cons}
+          \begin{itemize}
+              \item Relations between objects can be confusing (color and shapes can help): loss of affordance
+          \item Limited in design (hard to make something new and elegant)
+          \end{itemize}
+       \end{column}
+      
+       
+\end{columns}
+   
+    \end{frame}
+
+\section{Experimentation}
+
+\begin{frame}{Outline}
+
+	\tableofcontents[currentsection]
+
+\end{frame}
+
+\subsection{Definition of the experiment}
+\begin{frame}
+We compared two different calculator apps on iPad.
+
+\begin{columns}[c]
+	\column{.5\textwidth}
+    \begin{center}
+    \includegraphics[height=.75\textwidth]{soulver_screenshot.png}
+    
+    Soulver - a flat calculator
+    \end{center}
+    \column{.5\textwidth}
+	\begin{center}
+    \includegraphics[height=.75\textwidth]{m48p_screenshot.jpeg}
+    
+    m48+ Emulator
+    \end{center}
+\end{columns}
+
+A group of $n$ subjects were asked to perform daily tasks with each of the application.
+
+\end{frame}
+
+\subsection{Results}
+
+\begin{frame}{Results}
+
+
+\end{frame}
+
+\section{Previous results}
+\subsection{Flat VS Skeuomorph icons (June 2013)}
+
+\begin{frame}{Outline}
+    \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Flat VS Skeuomorph icons}
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{flat.png}
+	\end{figure}
+    \begin{center}
+      \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        &Windows 8 & IOS7 & IOS6 & Google\\
+        \hline
+        Video App 	& 19\%	& 22\%	& 21\%	& 38\% \\
+        Calendar App& 10\%	& 44\%	& 23\%	& 23\% \\
+        Video App	& 24\%	& 22\%	& 30\%	& 24\% \\
+        \hline
+        Average		& 17.6\%& 29.3\%& 24.6\%& 28.3\% \\
+        \hline
+      \end{tabular}
+    \end{center}
+    	\begin{flushright}\tiny\url{www.grapheine/divers/flat-design-vs-skeumorphisme}\normalsize\end{flushright}
+\end{frame}
+
+\subsection{Windows survey (Sept 2012)}
+\begin{frame}{Windows survey about new users of windows 8}
+	
+    \small
+    \begin{center}
+      \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        & Windows 8 & Windows 7 & Windows XP & Others\\
+        \hline
+        Already used windows & 26\%	& 75\%	& 58\%	& 17\% \\
+        Prefered windows	 & 25\%	& 53\%	& 20\%	& 2\% \\
+        \hline
+      \end{tabular}
+    \end{center}
+    \normalsize
+    \begin{columns}[c]
+      \column{.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[scale=0.25]{windows8UI.jpg}
+      \end{figure}
+      \column{.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[scale=0.25]{windows8Phone.png}
+      
+        \centering
+        \includegraphics[scale=0.25]{windows8Tablet.png}
+      \end{figure}
+      
+	\end{columns}
+	\begin{flushright}\tiny\url{www.forumswindows8.com/general-discussion/windows-8-survey-half-prefer-windows-7-a-7853.htm}\normalsize\end{flushright}
+\end{frame}
+
+
+
+\subsection{Japanese study about concrete and flat design (March 2013)}
+\begin{frame}{Japanese study about concrete and flat design}
+	\begin{itemize}
+    \item Vast choice of app, first impression is important. Design of the icon should be well choosen\\
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.5]{UI.png}
+      \end{figure}
+    \item Icons analysed by 8 designers with one questionnaire, and by 42 buyers of apps with another. Tried to find best correlation between particularities to make a map
+    \end{itemize}
+	\begin{flushright}\tiny\url{http://design-cu.jp/iasdr2013/papers/1811-1b.pdf}\normalsize\end{flushright}
+\end{frame}
+
+\begin{frame}{Japanese study about concrete and flat design (2)}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.45]{caract.png}
+      \end{figure}
+	\begin{flushright}\tiny\url{http://design-cu.jp/iasdr2013/papers/1811-1b.pdf}\normalsize\end{flushright}
+\end{frame}
+
+\begin{frame}{Japanese study about concrete and flat design (3)}
+	\begin{columns}[c]
+      \column{.6\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[scale=0.45]{map.png}
+      \end{figure}
+      \column{.4\textwidth}
+      \begin{itemize}
+        \item Preference between 16 icons
+        \item 77 participants
+        \item 77\% smartphones
+        \item 23\% featurephones
+      \end{itemize} 
+	\end{columns}
+	\begin{flushright}\tiny\url{http://design-cu.jp/iasdr2013/papers/1811-1b.pdf}\normalsize\end{flushright}
+\end{frame}
+
+\begin{frame}{Japanese study about concrete and flat design (4)}
+	\begin{figure}
+    	\centering
+        \includegraphics[scale=0.6]{finalStat.png}
+    \end{figure}
+    \begin{itemize}
+        \item 75\% prefer concrete icons
+		\item Icon music is different... Old item not used anymore?
+    \end{itemize} 
+	\begin{flushright}\tiny\url{http://design-cu.jp/iasdr2013/papers/1811-1b.pdf}\normalsize\end{flushright}
+\end{frame}
+
+%\bibliographystyle{amsalpha}
+%\bibliography{dit-paper}
+
+\end{document}
