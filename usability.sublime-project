@@ -1,0 +1,19 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "./",
+            "file_exclude_patterns": ["*.aux", "*.fdb_latexmk","*.fls","*.log","*.pdf","*.synctex.gz","*.toc","*.blg","*.dvi","*.bbl"],
+            "name": "Usability",
+        }
+    ]
+    // "build_systems":
+    // [
+    //     {
+    //         "name": "",
+    //         "cmd": ["", "arg"],
+    //         "selector": "source.tex"
+    //     }
+    // ]
+}
