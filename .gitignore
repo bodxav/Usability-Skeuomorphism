@@ -10,3 +10,6 @@
 *.bbl
 *.sublime-workspace
 *.tmp
+*.nav
+*.out
+*.snm
