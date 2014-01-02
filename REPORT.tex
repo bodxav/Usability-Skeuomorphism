@@ -41,26 +41,25 @@ Luc WILKIN
 ~\\
 
 \includegraphics[scale=0.15]{fig-report/ULBjea.jpg}
+
+~\\
+
+\textit{“Most people make the mistake of thinking design is what it looks like. People think it’s this veneer – that the designers are handed this box and told, ‘Make it look good!’ That’s not what we think design is. It’s not just what it looks like and feels like. Design is how it works.”} \mbox{– Steve Jobs, New York Times 2003}
+
 \end{center}
-
-\begin{center}
-
-\textit{“Most people make the mistake of thinking design is what it looks like. People think it’s this veneer – that the designers are handed this box and told, ‘Make it look good!’ That’s not what we think design is. It’s not just what it looks like and feels like. Design is how it works.” – Steve Jobs, New York Times 2003
-\\}
-\end{center}
-
-
 
 \pagebreak
+
 \tableofcontents
 \pagebreak
+
 \section{Introduction}
 
 Most tools we use today, from wristwatches and squirt guns to smartphones and industrial softwares, rely on sophisticated technology hidden from the user. This require the user to be taught how to use the tool, which can be done with manuals and trial-and-error, but also by designing the tool in such a way that its usage is both obvious and simple.\\
 
 While this has been done for centuries for physical objects using buttons, elaborate shapes, different materials, etc, the most recent computing devices tends to have a simplistic physical design (often reduced to a black surface with a touchscreen) and use software elements on the screen to interact with the user by touch, leaving the responsibility of design to the application creator.\\
 
-According to recent market research (\cite{ABI-android}), the iPad from Apple is still the most sold tablet in the world. Its user base is so huge that several companies make their entire revenue by selling apps for it. In an App Store containing almost a million different apps (\cite{iOs61}), users trying to find an app for a particular use may find dozens of different iterations. Studying how to apply design principles in tablet application design may help to make an application easy to use and to understand, and thus standing out against competitors.\\
+According to recent market research (\cite{ABI-android}), the iPad from Apple is still the most sold tablet in the world. Its user base is so huge that several companies base their entire business model on selling apps for it. In an App Store containing almost a million different apps (\cite{iOs61}), users trying to find an app for a particular use may find dozens of different iterations. Studying how to apply design principles in tablet application design may help to make an application easy to use and to understand, and thus standing out against competitors.\\
 
 In this document, we concentrate on design trends in electronic tablet applications. In Sect.~\ref{sct:theory}, we present some of the basic design principles described in \cite{Norman02} which can be applied to the design of any object.\\
 
@@ -118,7 +117,6 @@ A common example to illustrate this concept is the placement of the buttons that
       \end{minipage}
   \end{minipage}
   \bigskip
-
 
 Unfortunately, this principle may sometimes induce extra design cost and may also depends on the point of view of the designer: even if it seems logical for certain arrangement such stoves or the control of the electronic windows of the car, one can still doubt about the mapping of light switches(\textit{"Does this switch controls  the lights of the front of the room because it is above the others ?"}).
 
@@ -219,7 +217,7 @@ As presented in \cite{Norman02}, one can also add two principles to a good desig
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.75\textwidth]{fig-report/terminal.png}
+        \includegraphics[width=0.95\textwidth]{fig-report/terminal.png}
         \caption{A typical CLI showing the content of a directory. Color is used for highlighting certain informations}
         \label{fig:cli}
     \end{figure}
@@ -230,7 +228,7 @@ As presented in \cite{Norman02}, one can also add two principles to a good desig
 
     \subsection{Graphical interface and computer mouse}
 
-    Invented in 1963 and made famous in 1968 during the ``Mother of All Demos''\cite{engelbart1968research}, the computer mouse coupled with an OS using a graphical interface allow the user to interact with the space of the screen. Graphical interfaces allowed designers to use powerful visual metaphors to construct an intuitive conceptual model (i.e. start button, trashbin, desktop, etc), as well as providing visual feedback to the user (movement of the mouse cursor, highlighting of selected items, animation when closing a program).\\
+    Invented in 1963 and made famous in 1968 during the ``Mother of All Demos''\cite{engelbart1968research}, the computer mouse coupled with an OS using a graphical interface allow the user to interact with the space of the screen. Graphical interfaces allowed designers to use powerful visual metaphors to construct an intuitive conceptual model (i.e. start button, trashbin, desktop, etc), as well as providing visual feedback to the user (movement of the mouse cursor, highlighting of selected items, animation when minimizing program).\\
 
     Graphical interfaces and their intuitive conceptual model helped the broad adoption of personal computers. They are still the main interfaces used today, even if some operating systems are pushing for a shift to touch interfaces nowadays. The latest iterations concentrate on higher-resolution icons and more complex animations.
 
@@ -242,45 +240,59 @@ As presented in \cite{Norman02}, one can also add two principles to a good desig
 
     \subsection{Voice interface}
 
-    With early appearances as soon as in the 1920s, voice interfaces is an old idea whose usability is highly dependent on advances in the field of speech recognition and semantical analysis. While the latest commercial voice interfaces allow to recognize many languages with a low rate of errors, current interfaces only allow users to input simple commands in a limited set of languages. They are seldom used by most users (as found by \cite{SiriNotUsed} which studied Apple's Siri).
+    With early appearances as soon as in the 1920s, voice interfaces is an old idea whose usability is highly dependent on advances in the fields of speech recognition and semantical analysis. While the latest commercial voice interfaces allow to recognize many languages with a low rate of errors, current interfaces only allow users to input simple commands in a limited set of languages. They are rarely used by most users (as found by \cite{SiriNotUsed} which studied Apple's Siri), so we chose not to concentrate on it in this report.
 
     \subsection{Neural interface}
 
-
+    Vraiment important ? C'est déjà assez long comme ça je trouve !
 
     \subsection{Current trends in touch interface}
 
-    Early design of touchscreen devices were often derived from classical mouse-based design.
+    Early design of touchscreen devices were often derived from classical mouse-based design, with the screen touches interpreted as mouse clicks. These devices remained a niche market until the introduction of devices designed from the ground up for touch-based devices. We now present two design paradigms which are used nowadays for these type of devices.
 
         \subsubsection{Skeuomorphism}
-        \subsubsection{Flat design}
+        \begin{defn}
+        \textit{Skeuomorph:} An object or feature which imitates the design of a similar artefact made from another material. From the greek words $\sigma \kappa \varepsilon \upsilon {\rm o} \zeta$ (tool) and $\mu {\rm o} \rho \varphi \eta$ (shape).
+        \end{defn}
 
+        This design paradigm was first introduced in 2007 with Apple's iOS operating system for their iPhone and iPad devices, both highly successful and followed by other devices with a similar design. Skeuomorphic applications try to mimic an existing object in order to feel familiar to the user.\\
+
+        For example, a skeuomorph dialer application may display a picture of an analog wheel-shaped dialer and ask the user to turn the virtual wheel in a movement familiar to him. While the user choose a number, the application may the sounds of the wheel turning and a bell ringing. This type of application has very clear affordance, an intuitive conceptual model and provides efficient feedback, as long as the user is familiar with the mimicked tool.\\
+
+        Skeuomorphic applications are often characterized by realistic textures, glossy elements and gradient backgrounds, resulting in a three-dimensional feel.
+
+        \subsubsection{Flat design}
+        \begin{defn}
+        \textit{Flat design} \cite{whatIsFlat}: minimalistic design approach that emphasizes usability. It features clean, open, crisp edges, bright colours and two-dimensional/flat illustrations.
+        \end{defn}
+
+        While skeuomorphic designs helped the broad adoption and usage of touch-based devices thanks to their familiar conceptual model, they also add many superfluous details which can distract the user from the relevant usage of the application. Their complex design can cause a higher battery usage and eye fatigue to the user, as well as limiting the usability of the application to the one of the object it tries to mimic (for example, a truly skeuomorphic dialer cannot autocomplete phone numbers based on the user's contact list).\\
+
+        Hence the recent rise of the Flat design, in which all superfluous elements are removed. These designs tend to be minimalist and to have a two-dimensional iconic feel. An early example is the controversial \textit{Metro} interface for Windows 8, and later the iOS7 update which signified a paradigm shift in Apple's design.
 
 \section{Experiments}
 \label{sct:experiment}
 
     \subsection{Definition of the experiment}
 
-    To compare skeuomorph and Flat design, we presented our subjects with two different calculator applications on iPad. One had a familiar skeuomorph design and the other had an original but intuitive design, based on Flat principles. After a quick demonstration of both apps, the subject was asked to answer simple questions using both applications. The quiz is available in appendix.\\
+    To compare skeuomorph and Flat design, we presented our subjects with two different calculator applications on iPad. One had a familiar skeuomorph design and the other had an original but intuitive design, based on Flat principles. After a quick demonstration of both apps, the subject was asked to answer simple questions using both applications. The quiz is available as an appendix.\\
 
     % Figure showing the two apps...
 
     \subsection{Results analysis}
-    
+
     During our experiments, people tends to choose the skeuomorph calculator for the first case, The travelling bill. Indeed, we suppose that due to simplicity of operations, people think the simpler calculator will be enough to solve every asked questions. A little problem arose, when we ask them to give us only the details for money spent on taxi fares due to the fact that the computation steps weren't labelled. In general, results provided by users were correct.\\
-    
+
     In the second part of the experiment, we forced users to choose the other calculator(Most of the time, \textit{Soulver}). A first thing to notice, is the fact that most of users appeared to be lost due to uncommon interface. Indeed, numeric pad is not highlighted and Soulver proposes many other functions (such as percent computation, simple equation solving,\ldots). Instead of using dedicated functions, users tried to use their mathematical knowledge to solve given equations. As a consequence, results ( but also computation time) were not as good as in the first case. Once we showed them the additional functions in details, users appeared to be surprised but happy to see that the application integrates such features: Most of them explained us that they didn't see it because it's not emphasized and suggested that developed should use different types of buttons(color, shape, text color,\ldots). A good point of the flat calculator is the fact that it integrates a labelled history in which users can add textual information. This makes the "sub-resolution" problems easier.\\
-    
+
     In general, users couldn't use the full potential of the flat calculator due to the lack of information. At first sight, and due to a limited designed, users appeared to be lost and limited their actions to the simplest one (addition, subtraction, division, multiplication) instead of exploiting the dedicated function to compute percentage or solve basic equation. Several users admitted that they wanted to use the flat calculator for everyday operations (shopping list, bills,\ldots) if they could follow a small training session.\\
-    
+
     The last question of our poll was about the new design of IOS 7 proposed by \textit{Apple}.
-    Users estimated that the new design( a flat design) is more beautiful and abstract without inducing a big loss in term of 	usability. The older users admitted that the a flat design required a necessary but fast adaptation:
-  	(In french) \textit{Colette} - \textit{"Lors de la mise à jour, j'ai été surprise et un peu perdue parce que les toutes les icones avaient changer mais après 2-3 jours d'utilisation, je me suis adaptée. Si on devait revenir au précédent design, celà constituerait une perte de temps étant donné que je devrais m'y ré-adapaté."}
-    
-    
+    Users estimated that the new design( a flat design) is more beautiful and abstract without inducing a big loss in term of usability. The older users admitted that the a flat design required a necessary but fast adaptation:
+  	(In french) \textit{Colette} - \textit{"Lors de la mise à jour, j'ai été surprise et un peu perdue parce que toutes les icones avaient changées, mais après deux ou trois jours d'utilisation, je me suis adaptée. Si on devait revenir au précédent design, ce serait une perte de temps étant donné que je devrais m'y ré-adapater."}
 
     \subsection{Comparison with previous studies}
-    This is a subject where other studies are uncommon or mostly uncomplete. This make it difficult to compare, the three different studies that have been chosen and that will be exposed are: A blog about design that ask users about their preference, the windows 8 forum where a report over the preference between windows 7 and 8 is posted. Finally the last study is a japanese one, from the Department of Industrial Design National Cheng Kung University. This tries to analyse the different types of icons and class them between the abstact-concrete and detailled-terse factors.
+    This is a subject where other studies are uncommon or mostly uncomplete. This make it difficult to compare, the three different studies that have been chosen and that will be exposed are: A blog post about design that ask users about their preference, the windows 8 forum where a report over the preference between windows 7 and 8 is posted. Finally the last study is a japanese one, from the Department of Industrial Design National Cheng Kung University. This tries to analyse the different types of icons and to class them between the abstact-concrete and detailled-terse factors.
 
     \subsubsection{Flat VS skeuomorphism\cite{flatVSskeuomorphisme}}
     This start with the survey, asking the users to give their preference between a set of icons from Google, IOS6, IOS7 and Windows phone. Here is the results :\\
@@ -288,18 +300,18 @@ As presented in \cite{Norman02}, one can also add two principles to a good desig
     \centering
     \includegraphics[scale=0.3]{fig-report/flatVSskeuomorphism.png}
     \end{figure}\\
-As we can see, the results are not really significant, except if we consider that all except IOS6 are flat design, so that more than 70\% of the participant vote for flat design in each case. The main problem with this study is that there is no skeuomorph icons for google and windows phone. The majority of the icons beeing flat influance the results so that this is hard to belief. The second interresant thing is that windows 8 got a really low score for his calendar application. The three other possibilities looks similar and got an hier scores, leading to the conclusion that people really do not like this icon.
+As we can see, the results are not really significant, except if we consider that all except IOS6 are flat design, so that more than 70\% of the participant vote for flat design in each case. The main problem with this study is that there is no skeuomorph icons for google and windows phone. The majority of the icons being flat influence the results so that this is hard to belief. Another interesting thing is that windows 8 got a really low score for his calendar application. The three other possibilities looks similar and got an hier scores, leading to the conclusion that people really do not like this icon.
 
     \subsubsection{Windows 8 survey, half prefer windows 7\cite{windows8Survey}}
-This survey is made by windows for windows users, and thus should be taken with care. After taking care of this, the informations revealed by the survey are quite interessant. The Metro UI (flat user interface) is classed in the 9th position of the most liked features with 22\% of the people liking it, while the fact to having two types of desktop, the Metro and the classical is disliked by 18\% of the people, putting it in the fifth place of the weaknesses to be improved.\\
+This survey is made by Microsoft for Windows users, and thus should be taken with care. That being said, the informations revealed by the survey are quite interesting. The Metro UI (flat user interface) is classed in the 9th position of the most liked features with 22\% of the people liking it, while the fact to having two types of desktop, the Metro and the classical is disliked by 18\% of the people, putting it in the fifth place of the weaknesses to be improved.\\
 We can ask ourself if the ones that voted for the Metro UI are not the same ones that voted for the double interface to be useless, because of the fact that the ones that are the most convincted of the flat interface should be the ones seeing a double interface to be the most usefull or ineffective.
 \\
-By summing all the votes, we can observe that on average, each voter has voted twice more for liked features than for weaknesses. Seeing that we could say that windows 8 is quite liked by the users of the forum. By remembering the fact that this survey is made on the windows 8 forum, that should be followed by the adepts of the windows operating system, we could rethink about it. Other surveys showered that in fact that two people still uses windows 7 for one using windows 8, a preference that could be caused by the price (35\% of the survey seeing this as one of the weaknesses) or lots of other factors that are not specially caused by the new UI. This makes it really hard to say which is prefered.
+By summing all the votes, we can observe that on average, each voter has voted twice more for liked features than for weaknesses. Seeing that we could say that windows 8 is quite liked by the users of the forum. By remembering the fact that this survey is made on the windows 8 forum, that should be followed by the adepts of the windows operating system, we could rethink about it. Other surveys showered that in fact that two people still uses windows 7 for one using windows 8, a preference that could be caused by the price (35\% of the survey seeing this as one of the weaknesses) or lots of other factors that are not specially caused by the new UI. This makes it really hard to say which is preferred.
 \\
-The results stops by showing the corresponding graphs and graphs about the tablets. We should keep in mind that the results are from a windows 8 forum and that they are from september 2012, before we start to talk of IOS7 (september 2013). Globally, android leeds the maket whith one third of all mobile devices, one quarter of the cake was taken by IOS6 and windows one wuarter for the phones and one third for the tablets. This last information is interessant: while android and IOS globally get the same part of the market, windows seems to be prefered while on a bigger touchscreen device. This is caused by the fact that their new UI is thought to be used on flat, touchscreen computers and tablets. This is very representative and could lead to the conclusion that microsoft uses the flat design for other kind of devices, and thus should be used together instead of compare them.
+The results stops by showing the corresponding graphs and graphs about the tablets. We should keep in mind that the results are from a windows 8 forum and that they are from September 2012, before we start to talk of iOS7 (September 2013). Globally, android leads the market whith one third of all mobile devices, one quarter of the cake was taken by iOS6 and Windows one quarter for the phones and one third for the tablets. This last information is interesting: while android and IOS globally get the same part of the market, windows seems to be preferred on a bigger touchscreen device. This is caused by the fact that their new UI is thought to be used on flat, touchscreen computers and tablets. This is very representative and could lead to the conclusion that Microsoft uses the flat design for other kind of devices, and thus should be used together instead of compare them.
 
     \subsubsection{A preliminary study on aesthetic of apps icon design\cite{jpAnalitics}}
-This study is made by a Japanese university with the collaboration of two members of the Department of Industrial Design National Cheng Kung University in Taiwan. This try to analyse and determine the different aspects of the aesthetic in the icons, the links between themself and with the users and finaly investiguate the new issues to the skeuomorphism, meening the flat design. To get the results, they use evaluation grid results, quantification theory and regression to identify potential relationships between constituant of the icons. They also introduce the kansei interface concept that try to include the emotionnal principle in the UI.
+This study is made by a Japanese university with the collaboration of two members of the Department of Industrial Design National Cheng Kung University in Taiwan. This try to analyse and determine the different aspects of the aesthetic in the icons, the links between themselves and with the users and finally investigate the new issues to the skeuomorphism, meaning the flat design. To get the results, they use evaluation grid results, quantification theory and regression to identify potential relationships between constituant of the icons. They also introduce the kansei interface concept that try to include the emotional principle in the UI.
 \\
 The kansei interface is a principle that gets the general principle of usability, but also add a positive emotion factor with what they call interactive motivation. This is used in the context of the app market, with lots of app doing the same things and where the need is to interest the user to look at your app, the icon beeing the representation of all the application behind it. It should create emotion to get the interest, motivation to look further, and usability to understand the purpose.
 \\
@@ -312,7 +324,7 @@ Third part begin with a questionnaire asking for the different type of icons to 
   }
   \caption{Figure 6 of the study}\label{jpfig6}
 \end{figure}
-After this, a real questionnaire where given and the results were used to build a correlation between previously analysed factors and the fact that the icons where cute, vigorous,intuitive and fun. By example, to be vigorous, an icon should have a 3D effect, color, dynamic elements and novelty. The full table is present in the appendix, see figure \ref{jppage8}. This was made with the purpose of attempting to define the axis of the map as concrete-abstract and detailed-terse. See figure\ref{jpfig7}
+After this, a real questionnaire was given and the results were used to build a correlation between previously analysed factors and the fact that the icons where cute, vigorous,intuitive and fun. By example, to be vigorous, an icon should have a 3D effect, color, dynamic elements and novelty. The full table is present in the appendix, see figure \ref{jppage8}. This was made with the purpose of attempting to define the axis of the map as concrete-abstract and detailed-terse. See figure\ref{jpfig7}
 \\
 Based on the map, a second questionnaire were also done to compare the preference between concrete and abstract (or skeuomorph and flat design) icons. The results shows that most people prefer concrete style icons.
 \begin{figure}[H]
@@ -324,6 +336,8 @@ Based on the map, a second questionnaire were also done to compare the preferenc
     \subsubsection{Conclusion of the articles}
         The small quantity of source make it difficult to get a conclusion, but by referring to the two last ones, we could expect that our experiment would lead to a preference of the old, concrete style, where people knows how to make it work in comparison to a new flat design where will not find they mark
 \section{Conclusion}
+
+(Thomas) Je pense que c'est important de dire qu'on s'est concentré sur le Skeuomorph vs. Flat mais que c'est qu'un point de la grande question du design d'une application ou d'un OS pour du touch-based.
 
 \newpage
 \section{Appendix}
