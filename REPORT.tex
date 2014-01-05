@@ -14,6 +14,7 @@
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{pdfpages}
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}[section]
 \newtheorem{conj}{Conjecture}[section]
@@ -28,7 +29,7 @@
 
 
 \begin{document}
-\title{\textbf{Usability and Skeuomorphism}}
+\title{\textbf{Usability of touch-based devices \\ Skeuomorph and Flat design}}
 \author{\textbf{Bodart Xavier} - \textbf{Chapeaux Thomas} - \textbf{Mayeur Bernard} \\
 Université Libre de Bruxelles}
 
@@ -434,30 +435,40 @@ While perceived affordance and constraints are the two main concept in object de
 
 \section{Conclusion}
 
-(Thomas) Je pense que c'est important de dire qu'on s'est concentré sur le Skeuomorph vs. Flat mais que c'est qu'un point de la grande question du design d'une application ou d'un OS pour du touch-based.
+In this document, we presented some of the ideas and challenges for the design of applications for touch-screen based devices. In particular, we compared two visual languages used in most tablet operating system: Flat and Skeuomorph. Note that there are of course other factors to take into account when designing an application such as spatial layouts, color palette, screens arrangement, etc.\\
+
+While skeuomorph designs have been used when touch-based devices were first introduced to the public and have greatly helped their wide adoption, it now seems that both designers and users have grown tired of their inherent complexity and inefficiency. This lead to the adoption of minimalist designs with sharp edges and bright colors, or Flat design.\\
+
+While skeuomorphism worked well for non-technical people thanks to their immediate conceptual model, the shift to Flat force applications creator to concentrate on an immediately intuitive design. This was very clear in our experiment, where subjects instinctively chose the skeuomorph application over the Flat one, which offered more feature but seemed complex to use. When using the flat application, our subjects often missed the more advanced features, and seemed confused when using them.
+
+(To be continued...)
 
 \newpage
-\section{Appendix}
-    \subsection{A preliminary study on aesthetic of apps icon design\cite{jpAnalitics}}
-      \begin{figure}[H]
-        \centering{
-          \includegraphics[scale=0.7]{fig-report/jpfig5.png}
-        }
-        \caption{Figure 5 of the study}\label{jpfig5}
-      \end{figure}
+\appendix
 
-      \begin{figure}[H]
-        \centering{
-          \includegraphics[scale=0.7]{fig-report/jppage8.png}
-        }
-        \caption{page 8 of the study}\label{jppage8}
-      \end{figure}
-      \begin{figure}[H]
-        \centering{
-          \includegraphics[scale=0.7]{fig-report/jpfig7.png}
-        }
-        \caption{Figure 7 of the study}\label{jpfig7}
-      \end{figure}
+\section{Appendix - Figures of ``A preliminary study on aesthetic of apps icon design''}
+Here are some relevant figures presented in \cite{jpAnalitics}.
+  \begin{figure}[H]
+    \centering{
+      \includegraphics[scale=0.7]{fig-report/jpfig5.png}
+    }
+    \caption{Figure 5 of the study}\label{jpfig5}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering{
+      \includegraphics[scale=0.7]{fig-report/jppage8.png}
+    }
+    \caption{page 8 of the study}\label{jppage8}
+  \end{figure}
+  \begin{figure}[H]
+    \centering{
+      \includegraphics[scale=0.7]{fig-report/jpfig7.png}
+    }
+    \caption{Figure 7 of the study}\label{jpfig7}
+  \end{figure}
+
+\includepdf[pages={1-2}, nup=1x2]{fig-report/ComputersandSociety-Experiment.pdf}
 
 
 \newpage

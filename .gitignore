@@ -2,7 +2,6 @@
 *.fdb_latexmk
 *.fls
 *.log
-*.pdf
 *.synctex.gz
 *.toc
 *.blg
@@ -13,3 +12,5 @@
 *.nav
 *.out
 *.snm
+*.pdf
+!fig-report/ComputersandSociety-Experiment.pdf
