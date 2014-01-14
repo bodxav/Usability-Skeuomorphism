@@ -28,7 +28,7 @@
 \subtitle {INFO-F-501 Information technology in society}
 \author{Thomas~Chapeaux  \and Bernard~Mayeur \and Xavier~Bodart }
 \institute[shortinst]{Université Libre de Bruxelles \\ Belgium}
-\date{December 2013}
+\date{January 2014}
 
 \begin{document}
 
@@ -126,7 +126,7 @@
 \subsection{History of IT design}
 
 \begin{frame}{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
 \end{frame}
 
 \begin{frame}{Evolution in IT:Timeline}
@@ -147,10 +147,12 @@
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Evolution in IT: Command line interface}
+\begin{frame}{Evolution in IT: Command Line Interface}
 
 \begin{itemize}
-\item Command interpreter
+\item First attempt at design
+\item Keyboard: labeled buttons (logical constraint)
+\item Basic feedback
 \item Lack of affordance
 \end{itemize}
 	\begin{figure}
@@ -160,11 +162,11 @@
 
 		\end{figure}
 \end{frame}
-\begin{frame}{Evolution in IT: Mouse \& Graphical interface}
+
+\begin{frame}{Evolution in IT: Mouse and Graphical User Interface}
 \begin{itemize}
-\item Used first to be able to navigate into the NLS
-\item Coupled with graphical itnerface
 \item Invented by Xerox and standardized by Apple
+\item Simpler conceptual model: the user interacts with the screen
 \item Gain of affordance + natural mapping + feedback
 \end{itemize}
 
@@ -181,24 +183,28 @@
 
 \begin{frame}{Evolution in IT: Touch interface}
 \begin{itemize}
-\item Multiple technologies
-\item Natural affordance $\rightarrow$ Mouse $=$ Finger
-\item Instant feedback
+\item
+\item Natural affordance: direct interaction with the screen
+\item Even simpler conceptual model
 \item Complex operations using multiple finger
+\item But...
+    \begin{itemize}
+        \item Less precise than a mouse
+        \item Artificial feel
+        \item Lack of physical feedback
+    \end{itemize}
 \end{itemize}
 \begin{figure}[ht]
 \includegraphics[scale=0.3]{multitouch_gestures_trackpad_2.jpg}
 \end{figure}
 \end{frame}
+
 \begin{frame}{Evolution in IT: Vocal interface}
 \begin{itemize}
-\item From isolated words to spontaneous speech
-\item 2 main evaluation criteria
-\begin{itemize}
-	\item Speed
-	\item Accuracy
-\end{itemize}
-\item Grant maximum usability if nice trained.
+\item Very early implementations
+\item Closely linked to technology
+\item Conceptual model: ask the computer anything
+\item In practice: not usable yet
 \end{itemize}
 \begin{figure}[ht]
 \begin{minipage}[b]{0.30\linewidth}
@@ -212,103 +218,85 @@
 \centering
 \includegraphics[width=\textwidth]{recognition-process.png}
 
-
 \end{minipage}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Evolution in IT : Neuronal interface}
 \begin{itemize}
-\item Extremely expensive (Still in research)
+\item Expensive (Still in research)
 \item Invasive or Non-invasive interface
 \item Matt Nagle case
 \end{itemize}
-\begin{figure}[ht]
-\begin{minipage}[b]{0.30\linewidth}
-\centering
-\includegraphics[width=\textwidth]{matt-nagle.jpg}
 
+~\\
 
-\end{minipage}
-\hspace{0.15cm}
-\begin{minipage}[b]{0.40\linewidth}
-\centering
-\includegraphics[width=\textwidth]{brain-chip.jpg}
-\end{minipage}
-\end{figure}
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{matt-nagle.jpg} ~
+    \includegraphics[width=0.4\textwidth]{brain-chip.jpg}
+\end{center}
+
 \end{frame}
 
 \subsection{Touchscreen interface: Flat vs. Skeuomorphism}
 
 \begin{frame}{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
 \end{frame}
 
-
-	\begin{frame}{Skeuomorphism}
-	\begin{block}{Skeuomorph}
-	An object or feature which imitates the design of a similar artefact made from another material.
-	\end{block}
-	\begin{itemize}
-	\item Skeuos: $\sigma \kappa \varepsilon \upsilon {\rm o} \zeta$ = Tool(or container)
-	\item Morphê: $\mu {\rm o} \rho \varphi \eta$ = shape
-	\item Applied to physical and computer/mobile interfaces
-	\end{itemize}
-        \begin{figure}
-    \includegraphics[scale=0.25]{idial.jpg}
-    \end{figure}
-
-
-	\end{frame}
-	\begin{frame}{Flat design}
-	\begin{block}{Flat design}
-	Flat design is a minimalistic design approach that emphasizes usability. It features clean, open, crisp edges, bright colours and two-dimensional/flat illustrations.
-	\end{block}
+\begin{frame}{Skeuomorphism}
+\begin{block}{Skeuomorph}
+An object or feature which imitates the design of a similar artefact made from another material.
+\end{block}
+\begin{itemize}
+\item Skeuos: $\sigma \kappa \varepsilon \upsilon {\rm o} \zeta$ = Tool(or container)
+\item Morphê: $\mu {\rm o} \rho \varphi \eta$ = shape
+\item Applied to physical and computer/mobile interfaces
+\end{itemize}
     \begin{figure}
-    \includegraphics[scale=0.35]{dial-flat.png}
-    \end{figure}
-
-	\end{frame}
-
-    \begin{frame}
-      \begin{columns}[t]
-          \begin{column}{5cm}
-           \Large\textbf{Skeuomorph\\}
-           \normalsize
-             	\textbf{Pros}
-                  \begin{itemize}
-                  \item Affordance gained by design
-                  \item Attractive design for new users
-                  \item User-friendly
-                  \end{itemize}
-                  \textbf{Cons}
-                  \begin{itemize}
-                  \item Can introduce delays
-                  \item Can be felt as not serious for working applications
-                  \item Time spent for the design and not the application
-                  \item Does not always represent the trend of a given object
-                  \end{itemize}
-            \end{column}
-            \begin{column}{5cm}
-          \LARGE\textbf{Flat-design\\}
-          \normalsize
-       \textbf{Pros}
-          \begin{itemize}
-          \item As simple as possible
-          \item Load times and "stylesheets" tends to be smaller
-          \item Enhancing of the usability
-          \end{itemize}
-          \textbf{Cons}
-          \begin{itemize}
-              \item Relations between objects can be confusing (color and shapes can help): loss of affordance
-          \item Limited in design (hard to make something new and elegant)
-          \end{itemize}
-       \end{column}
+\includegraphics[scale=0.25]{idial.jpg}
+\end{figure}
 
 
-\end{columns}
+\end{frame}
+\begin{frame}{Flat design}
+\begin{block}{Flat design}
+Flat design is a minimalistic design approach that emphasizes usability. It features clean, open, crisp edges, bright colours and two-dimensional/flat illustrations.
+\end{block}
+\begin{figure}
+\includegraphics[scale=0.35]{dial-flat.png}
+\end{figure}
 
-    \end{frame}
+\end{frame}
+
+\begin{frame}{Comparison}
+    \begin{columns}[c]
+        \column{.5\textwidth}
+            Skeuomorphism
+            \begin{itemize}
+                \item Intuitive conceptual model
+                \item Sense of familiarity
+                \item Limited by previous design
+            \end{itemize}
+        \column{.5\textwidth}
+            Flat
+            \begin{itemize}
+                \item Clean look
+                \item Spatially efficient
+                \item Cannot rely on previous designs
+            \end{itemize}
+    \end{columns}
+    \begin{columns}[c]
+                \column{.5\textwidth}
+                    \begin{center}
+                    \includegraphics[width=0.7\textwidth]{idial.jpg}
+                    \end{center}
+                \column{.5\textwidth}
+                    \begin{center}
+                    \includegraphics[width=0.4\textwidth]{dial-flat.png}
+                    \end{center}
+    \end{columns}
+\end{frame}
 
 \section{Experimentation}
 
@@ -323,21 +311,21 @@
 We compared two different calculator apps on iPad.
 
 \begin{columns}[c]
-	\column{.5\textwidth}
-    \begin{center}
-    \includegraphics[height=.75\textwidth]{soulver_screenshot.png}
-
-    Soulver - a flat calculator
-    \end{center}
     \column{.5\textwidth}
-	\begin{center}
-    \includegraphics[height=.75\textwidth]{soulver_screenshot.png}
+        \begin{center}
+        \includegraphics[height=.75\textwidth]{soulveur-screen.png}\\
+        Soulver - a flat calculator
+        \end{center}
+    \column{.5\textwidth}
+       \begin{center}
+        \includegraphics[height=.75\textwidth]{m38-screen.png}\\
+        m48+ Emulator
+        \end{center}
+    \end{columns}
 
-    m48+ Emulator
-    \end{center}
-\end{columns}
+    ~\\
 
-A group of $n$ subjects were asked to perform daily tasks with each of the application.
+    A group of 10 subjects were asked to perform daily tasks with each of the application.
 
 \end{frame}
 
