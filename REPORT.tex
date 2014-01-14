@@ -68,14 +68,14 @@ In this document, we concentrate on design trends in electronic tablet applicati
 
 Then, in Sect.~\ref{sct:history}, we show how those principles can be recognized in the evolution of the design of computer systems, concluding with the current trends in electronic tablets, namely skeuomorphism and flat design.\\
 
-Finally, in Sect.~\ref{sct:experiment}, we present experimentation results demonstrating how users react to those designs. One result is from our own experiment, in which we confronted various users to a skeuomorphic calculator application and to a flat one.\\
+Finally, in Sect.~\ref{sct:experiment}, we present results from different experiments demonstrating how users react to those designs. One result is from our own experiment, in which we confronted various users to a skeuomorphic calculator application and to a flat one.\\
 
 \section{Theoretical concepts and design principles}
 
-A given object can have hundreds of possible interaction with an user. Design is used to highlight its intended usage using two concepts:
+Without directions, an user can have hundreds of possible ways to interact with an object. Design is used to highlight the intended usage using two concepts:
 \begin{enumerate}
-\item Perceived affordance suggests the good alternatives
-\item Constraints limit the number of bad alternatives
+\item \textit{Perceived affordance} suggests the good interactions
+\item \textit{Constraints} limit the number of bad interactions
 \end{enumerate}
 
 In this section, we present those concepts theoretically and we give some examples of their utilization.
@@ -84,7 +84,7 @@ In this section, we present those concepts theoretically and we give some exampl
 
     \subsection{Perceived affordance}
         \subsubsection{Definition}
-Perceived affordance represents the quality of an object that suggest its utilization. This concept is very important in object-design due to the fact that it represents the only source of information on the usage of the object if the user does not read the usage notice. Moreover, this concept may reinforce the feeling of experience of a person for a given object.
+Perceived affordance represents the quality of an object that suggest its utilization. This concept is very important in object-design due to the fact that if the user does not read the usage notive, it represents the only source of information on the usage of the object. Moreover, this concept may reinforce the feeling of experience for a given object.
 
 \begin{figure}[h]
 \centering
@@ -102,7 +102,9 @@ Perceived affordance is not real affordance (\cite{affordancesMads}): design can
 \end{figure}
 
     \subsubsection{Natural mapping}
-Natural mapping is the idea of organizing controllers in the same arrangement as the objects on which they have an influence. This principle will often lead to an increase in perceived affordance.\\
+\begin{defn}
+Natural mapping is the idea of organizing controllers in the same arrangement as the objects on which they have an influence. It is one technique that can be used to achieve a good perceived affordance.
+\end{defn}
 
 A common example is the placement of the buttons that control the different stoves in a kitchen (see Fig.~\ref{fig:natural-mapping-1}~\&~\ref{fig:natural-mapping-2}, taken from \cite{stoveMapping}). It's obvious that the most left-top button will regulate the temperature of the most left-top stove.\\
  \begin{minipage}{\linewidth}
@@ -130,13 +132,12 @@ A common example is the placement of the buttons that control the different stov
 Unfortunately, this principle induces extra design cost and also depends on the point of view of the designer: even if it seems logical for certain arrangement such as stoves or the control of the electronic windows of the car, one can still doubt about the mapping of light switches(\textit{"Does the highest switch controls the front lights?"}).
 
     \subsubsection{Feedback}
-\newtheorem{mydef}{Definition}
-\begin{mydef}
+\begin{defn}
 \textit{\textbf{Feedback}}: sending information back to the user about his actions and their consequences.
 \cite{Norman02}
-\end{mydef}
+\end{defn}
 
-In our case, feedback represents any action that could indicate to the user that its interaction with the item was taken into account. In certain cases, feedback can be done implicitly by the quality and the design of the object itself. For example, some buttons make a clicking sound when pressed. With modern technology however, feedback often requires additional functions like vibration or sound that corresponds to states of the device (see Fig.~\ref{fig:feedback}). These retro-actions have to provide the user with enough information to prevent a mistaken usage to cause frustration.
+Feedback represents any action that could indicate to the user that its interaction with the item was taken into account. In certain cases, feedback can be done implicitly by the quality and the design of the object itself. For example, some buttons make a clicking sound when pressed. With modern technology however, feedback often requires additional functions like vibration or sound that corresponds to states of the device (see Fig.~\ref{fig:feedback}). These retro-actions have to provide the user with enough information to prevent a mistaken usage to cause frustration.
 
 \begin{figure}[h]
 \centering
@@ -150,7 +151,7 @@ In our case, feedback represents any action that could indicate to the user that
 While perceived affordance and constraints are the two main concept in object design, the author of \cite{Norman02} also presents the following concepts:
 
 \begin{description}
-    \item [Conceptual model:] Or ``how the user thinks it works''. The idea is to provide a precise information model about the correct usage or maintenance of the object. By following instructions, users should be guaranteed to use the item correctly. The design of such scheme is really important and should be extremely clear. Indeed, if it's not, the user may be frustrated when the object is not working. An example is given in Fig.~\ref{fig:concept-model}.
+    \item [Conceptual model:] Or ``how the user thinks it works''. The idea is to provide a precise information model about the correct usage or maintenance of the object. The design of such scheme is really important and should be extremely clear. Indeed, if it's not, the user may be frustrated when the object is not working. An example is given in Fig.~\ref{fig:concept-model}.
 
     \item [Make things visible] Certain of our modern items can be seen as real complex state machines due to the number of actions they can propose, causing the need for a display showing the current state and available actions. A good example is VoIP telephones allowing users to start a conference call with several other people, such as in Fig.~\ref{fig:make-things-visible}. Such telephones are equipped with a large display which can show different contacts numbers, propose features to start conference call or even to place a call on hold in order to answer to another call.
 \end{description}
@@ -180,7 +181,7 @@ While perceived affordance and constraints are the two main concept in object de
     In addition to perceived affordance, usage of objects is also induced by different types of constraints. These constraints allow the user to immediately discard an incorrect interaction of the object.
 
         \subsubsection{Physical constraints}
-        These constraints are the strongest because they considerably reduce the number of possible usages: they make incorrect usages clearly not physically possible, preventing the user to even try them. Such constraints do not or poorly depend on the knowledge of the user.\\
+        These constraints are the strongest because they considerably reduce the number of possible usages: they make incorrect usages clearly not physically possible, preventing the user to even try them. Such constraints do not or weakly depend on the knowledge of the user.\\
 
         $\underline{Example:}$\\
         Due to the design of the toolbox in Fig.~\ref{fig:phys-constr-toolbox}, it's completely impossible for the user to put, for example, his hammer into the slot reserved for a screwdriver.
@@ -219,7 +220,7 @@ While perceived affordance and constraints are the two main concept in object de
         These constraints call to the good sense of the user, regardless of their physical or cultural knowledge. The correct usage should be the first and logical assumption of user through design choices. Such constraints are often linked to natural mapping.\\
 
         $\underline{Example:}$\\
-        When using a frying pan with a clearly visible and unique handle, the user will immediately understand the correct usage of it, as shown in Fig.~\ref{fig:log-constr-fryingpan}.
+        When using a frying pan where the handle is the only part which can be grabbed, the user will immediately understand its correct usage, as shown in Fig.~\ref{fig:log-constr-fryingpan}.
 
         \begin{figure}[h]
         \centering
@@ -236,7 +237,7 @@ While perceived affordance and constraints are the two main concept in object de
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.75\textwidth]{fig-report/timeline-interface.png}
+        \includegraphics[width=0.75\textwidth]{fig-report/timeline-interface_2.png}
         \caption{Main events in the evolution of computer interfaces}
         \label{fig:timeline}
     \end{figure}
@@ -252,13 +253,13 @@ While perceived affordance and constraints are the two main concept in object de
         \label{fig:cli}
     \end{figure}
 
-    The first attempt at an usable design for computing devices was the Command-Line Interface (CLI). The user can interact with the device using a keyboard by typing commands to launch programs, then the output of the program is displayed on the screen. While typing, the current command is displayed next to a cursor to provide feedback to the user. The buttons of the keyboard are labeled and follow a pattern standardized by countries, which is a case of natural mapping and cultural constraints.\\
+    The first attempt at an usable design for computing devices was the Command-Line Interface (CLI) (Fig.~\ref{fig:cli}). The user can interact with the device using a keyboard by typing commands to launch programs, then the output of the program is displayed on the screen. While typing, the current command is displayed next to a cursor to provide feedback to the user. The buttons of the keyboard are labeled and follow a pattern standardized by countries, which is a case of natural mapping and cultural constraints.\\
 
     Command-line interfaces were introduced in the 1960s and remained a de-facto standard until the introduction of graphical interfaces. Later iterations were improved by features as auto-completion (which improved the perceived affordance of possible commands) and colors (which helped the user to build a conceptual model). Note that while CLI are not used as a main interface in personal computers anymore, advanced users still use them in certain cases due to their efficiency.
 
     \subsection{Graphical interface and computer mouse}
 
-    Invented in 1963 and made famous in 1968 during the ``Mother of All Demos''\cite{engelbart1968research}, the computer mouse coupled with an OS using a graphical interface allow the user to interact with the space of the screen. Graphical interfaces allowed designers to use powerful visual metaphors to construct an intuitive conceptual model (i.e. start button, trashbin, desktop, etc), as well as providing visual feedback to the user (movement of the mouse cursor, highlighting of selected items, animation when minimizing program).\\
+    Invented in 1963 and made famous in 1968 during the ``Mother of All Demos''\cite{engelbart1968research}, the computer mouse (Fig.~\ref{fig:mouse}) coupled with an OS using a graphical interface (Fig.~\ref{fig:gui}) allow the user to interact with the space of the screen. Graphical interfaces allowed designers to use powerful visual metaphors to construct an intuitive conceptual model (i.e. start button, trashbin, desktop, etc), as well as providing visual feedback to the user (movement of the mouse cursor, highlighting of selected items, animation when minimizing program).\\
 
     Graphical interfaces and their intuitive conceptual model helped the broad adoption of personal computers. They are still the main interfaces used today, even if some operating systems are now pushing for a shift to touch interfaces. The latest iterations concentrate on higher-resolution icons and more complex animations.
  \begin{figure}[H]
@@ -270,18 +271,20 @@ While perceived affordance and constraints are the two main concept in object de
       \centering
       \includegraphics[scale=0.8]{fig-report/first-mouse.jpg}
     \caption{Douglas Engelbart and the first computer mouse that he invented in 1963\cite{douglas}}
+      \label{fig:mouse}
    \end{minipage} \hfill
    \begin{minipage}[c]{.46\linewidth}
    \centering
          \includegraphics[scale=0.4]{fig-report/xerorx-8010-star.png}
          \caption{Xerox 8010 Star interface is the first GUI ever commercialized (Around 1981)\cite{xerox8010}}
+         \label{fig:gui}
 
    \end{minipage}
 \end{figure}
 
     \subsection{Touch interface}
 
-    Introduced in 1973 (citation), the touchscreen seems to be the logical evolution of the computer mouse, as it allow the user to interact directly with the screen rather than using peripheral devices such as the mouse and the keyboard. Touch interfaces may use virtual and familiar devices such as buttons and switches whose affordance will be instantly recognized by the user, and actions such as moving a file or resizing an image can also be accomplished by intuitive movements such as dragging a finger across the screen or using to fingers to pinch.\\
+    Introduced in 1973, the touchscreen seems to be the logical evolution of the computer mouse, as it allow the user to interact directly with the screen rather than using peripheral devices such as the mouse and the keyboard. Touch interfaces may use virtual and familiar devices such as buttons and switches whose affordance will be instantly recognized by the user, and actions such as moving a file or resizing an image can also be accomplished by intuitive movements such as dragging a finger across the screen or using to fingers to pinch.\\
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=2]{fig-report/first-touchscreen.jpg}
@@ -324,7 +327,8 @@ While perceived affordance and constraints are the two main concept in object de
 
         While skeuomorphic designs helped the broad adoption and usage of touch-based devices thanks to their familiar conceptual model, they also add many superfluous details which can distract the user from the relevant usage of the application. Their complex design can cause a higher battery usage and eye fatigue to the user, as well as limiting the usability of the application to the one of the object it tries to mimic (for example, a truly skeuomorphic dialer cannot autocomplete phone numbers based on the user's contact list).\\
 
-        Hence the recent rise of the Flat design, in which all superfluous elements are removed. These designs tend to be minimalist and to have a two-dimensional iconic feel. An early example is the controversial \textit{Metro} interface for Windows 8, and later the iOS7 update which signified a paradigm shift in Apple's design.
+        Hence the recent rise of the Flat design, in which all superfluous elements are removed. These designs tend to be minimalist and to have a two-dimensional iconic feel. An early example is the controversial \textit{Metro} interface for Windows 8, and later the iOS7 update which signified a paradigm shift in Apple's design. Fig.~\ref{fig:skeuoflatCompare} shows an example of both design.
+
  \begin{figure}[H]
     \centering
     \
@@ -339,7 +343,8 @@ While perceived affordance and constraints are the two main concept in object de
    \centering
          \includegraphics[scale=0.5	]{fig-report/dial-flat.png}
    \end{minipage}
-   \caption{2 diferent design to dial a number: The first one looks like an old phone rotating dial panel. The other one tries to make as simple as possible}
+   \caption{Skeuomorphic and Flat design of a dialer application}
+   \label{fig:skeuoflatCompare}
 \end{figure}
 \section{Experiments}
 \label{sct:experiment}
@@ -392,81 +397,85 @@ While perceived affordance and constraints are the two main concept in object de
     Subjects estimated that the new flat design is more beautiful and abstract without much loss in terms of usability, even if older users admitted that the flat design required a short adaptation:
   	(In french) \textit{Colette} - \textit{"Lors de la mise à jour, j'ai été surprise et un peu perdue parce que toutes les icones avaient changées. Après deux ou trois jours d'utilisation, je me suis adaptée. Si on devait revenir au précédent design, ce serait une perte de temps étant donné que je devrais m'y ré-adapater."}
 
-    \subsection{Comparison with previous studies}
-    This is a subject where other studies are uncommon or mostly incomplete. This makes it difficult to compare, the three different studies that have been chosen and that will be exposed are: A blog post about design that ask users about their preference,  a report on the windows 8 forum over the preference between windows 7 and 8 and a last Japanese study from the Department of Industrial Design National Cheng Kung University which tries to analyze the different types of icons and classify them  between the abstract-concrete and detailed-terse factors.
+    \subsection{Comparison with previous experiments}
+
+    During our research, we encountered a lack of objective and reputable studies on the subject, making it difficult to get a big picture. The three studies we present here are:
+    \begin{itemize}
+        \item A post on a design blog which surveyed icon preference amongst its reader
+        \item A report by Microsoft over user preferences between Windows 7 and Windows 8
+        \item A study from a Japanese university which analyzed different types of icons and classified them using design factors.
+    \end{itemize}
 
     \subsubsection{Flat VS skeuomorphism}
 
-    The first survey \cite{flatVSskeuomorphisme} asked to the users to choose their favourite design between a set of icons from Android, iOS6, iOS7 and Windows Phone. The results are shown in Fig.~\ref{fig:flat-vs-skeu-result}\\
+    The first survey \cite{flatVSskeuomorphisme} asked users to choose their favorite design amongst a set of icons from Android, iOS6, iOS7 and Windows Phone. The results are shown in Fig.~\ref{fig:flat-vs-skeu-result}\\
 
     \begin{figure}[h]
     \centering
     \includegraphics[scale=0.3]{fig-report/flatVSskeuomorphism.png}
-    \caption{Results found in the flat vs. skeuomorphism experiment presented in \cite{flatVSskeuomorphisme}}
+    \caption{Preference of 2000 users as found in \cite{flatVSskeuomorphisme}}
     \label{fig:flat-vs-skeu-result}
     \end{figure}
 
-    Considering that all are based on flat design principles, except iOS6, more than 70\% of the participant vote for flat design in each case.\\
-    
-    A problem with this study is the fact that there is not any skeuomorphic comparable alternatives for Android and Windows phone. Results are also influenced by the majority number of flat icons in the survey. However, the calendar icon of Windows Phone obtains a low number of votes. This could be explained by the fact that its design is very different from the three others calendar icons and can confuse the users.\\
-    
+    Considering that only iOS6 is based on skeuomorph principles, we see that more than 70\% of the participant voted for flat icons in each case. Note that results are influenced by the majority of flat icons amongst the choices.\\
+
+    An interesting point is the calendar icon of Windows Phone, which obtains the lowest number of votes. This could be explained by the fact that its design is very different from the three other calendar icons and does not immediately evoke a calendar.\\
+
     %The main problem with this study is that there is no skeuomorph icons for google and windows phone. The majority of the icons being flat influence the results so that this is hard to belief. Another interesting thing is that windows 8 got a really low score for his calendar application. The three other possibilities looks similar and got an higher scores, leading to the conclusion that people really do not like this icon.
 
-One can conclude that even if the study not completely objective, users appear to respond well to flat design principles and preferring it to skeuomorphic design in certain circumstances.
+    We conclude that even if the study is not completely objective, users appear to respond well to flat design principles and prefer it to skeuomorphic designs in certain circumstances.
 
     \subsubsection{Windows 8 survey, half prefer windows 7}
 
-    This survey\cite{windows8Survey} is made by Microsoft for Windows users, and thus should be taken with care. That being said, the information revealed by the survey are quite interesting. The Metro UI (flat user interface) is ranked at the 9th position of the most liked features with 22\% of the people liking it. However, the presence of both Metro and classical desktop interface is disliked by 18\% of the people, ranking it at the fifth place of the weaknesses to be improved.\\
+    This survey\cite{windows8Survey} is made by Microsoft using Windows users as subjects, and thus should be taken with care. That being said, the information revealed by the survey is quite interesting. The Metro UI (flat user interface) is ranked at the 9th position of the most liked features with 22\% of the people liking it. However, the presence of both Metro and classical desktop interface is disliked by 18\% of the people, ranking it at the fifth place of the weaknesses to be improved.\\
 
-%    We can ask ourself if the ones that voted for the Metro UI are not the same ones that voted for the double interface to be useless, because of the fact that the ones that are the most convinced of the flat interface should be the ones seeing a double interface to be the most useful or ineffective.\\
+    We can observe that on average, voters have chosen twice as much liked features as weaknesses. Other surveys show that two Windows users out of three still uses Windows 7, a preference that could be caused by the price (35\% of the survey seeing this as one of the weaknesses) or other factors than the new UI.\\
 
-    We can observe that on average, voters have chosen twice as much liked features than weaknesses. Other surveys show that two Windows users out of three still uses Windows 7, a preference that could be caused by the price (35\% of the survey seeing this as one of the weaknesses) or other factors than the new UI.\\
-
-    The results conclude by showing graphs about OS preferences on phones and tablets. Note that the results are from September 2012, a year before the introduction of iOS7.
-    
-     Globally, Android dominates the market with a third of all mobile devices (phones and tablets). Both iOS6 and Windows phone have a quarter of the market in term of phones. One can notice that windows 8 surface leads the tablet market with 35\%.
-	\begin{figure}[!h]
+    \begin{figure}[!h]
      \centering
      \includegraphics[scale=0.55]{fig-report/tablet.png}
-     \caption{Polls results about usage of mobile devices operating systems}
+     \caption{Polls results about mobile devices operating systems preferences, from \cite{windows8Survey}}
+     \label{fig:windowsSurvey}
      \end{figure}
-      This last information is interesting: while Android and IOS globally get the same part of the market for tablets, Windows seems to be preferred on a bigger touchscreen devices. This may be because its User Interface is designed for touchscreen computers and tablets. Knowing that Microsoft tried to offer an unified experience, we can conclude that several features are not well-designed for all devices.
+
+    Further results (presented in Fig.~\ref{fig:windowsSurvey}) shows operating system preferences. Note that the results are from September 2012, a year before the introduction of iOS7. Globally, Android dominates the market with a third of all mobile devices (phones and tablets). Both iOS6 and Windows phone have a quarter of the market in term of phones. One can notice that windows 8 surface leads the tablet market with 35\%.\\
+
+    This means that while Android and IOS globally get the same part of the tablet market, Windows seems to be preferred on bigger touchscreen devices. This may be because its User Interface is designed for touchscreen computers and tablets. Knowing that Microsoft tried to offer an unified experience, we can conclude that several features are not well-designed for all devices.
 
     \subsubsection{A preliminary study on aesthetic of apps icon design}
 
-    This study \cite{jpAnalitics} is made by a Japanese university with the collaboration of two members of the Department of Industrial Design National Cheng Kung University in Taiwan. It tries to analyze and determine the different aspects of the aesthetic in the icons, the links between them and, their interactions with the users. It also try to define the frontier between skeuormophism and flat design. To get the results, they use evaluation grid results, quantification theory and regression((See Figure \ref{fig:jppage8}) to identify potential relationships between components of the icons. They also introduce the kansei interface concept that try to include the emotional principle in the UI.\\
+    This study \cite{jpAnalitics} was made by a Japanese university with the collaboration of two members of the Department of Industrial Design National Cheng Kung University in Taiwan. It analyzed different aspectss of icons aesthetic, the links between them and their interactions with users. It also defined a frontier between skeuormophism and flat design. Results were obtained using evaluation grid results, quantification theory and regression (Fig.~\ref{fig:jppage8}) to identify potential relationships between components of the icons. They also introduced the kansei interface concept that includes emotional principles in the UI.\\
 
-    The kansei interface is a principle that gets the general principle of usability, but also add a positive emotion factor with what they call interactive motivation. This is used in the context of the "app-market", proposing a lot of applications doing the same things. The goal for developer is to interest the user to look at their app by providing a nice designed(e.g representation) icon. It should create emotion to get interest, motivation to look further, and usability to understand the purpose.\\
+    The kansei interface is a principle based on usability, but adds a positive emotion factor with what they call interactive motivation. This is motivated by global application stores proposing multiple applications doing the same things. The developer goal is to attract the user towards their application by designing an attractive icon. It should create emotion to get interest, motivation to look further, and usability to understand the purpose.\\
 
-    The experiment is defined in three parts:
+    The experiment was separated in three parts:
     \begin{enumerate}
-    \item Analyse of the aesthetic factor for a set of icons by designers.
-    \item Definition of 8 groups in order to define category of icons(See Figure \ref{fig:jpfig5}).
-    \item Polls in order to measure their feelings about selected icons(See Figure \ref{fig:jppage8}).
+    \item Analysis of the aesthetic factor of a set of icons by designers
+    \item Definition of height groups in order to define category of icons (Fig~\ref{fig:jpfig5})
+    \item Polls in order to measure their feelings about selected icons (Fig~\ref{fig:jppage8})
     \end{enumerate}
-    
- The third step of the here-above list starts with a questionnaire asking the user which type of icons are attractive. The following results show that the more abstract it becomes, the less attractive it is. We can also observe that concrete icons have more success than abstract (flat) ones.
+
+     The third step consisted of a questionnaire asking users which type of icons they found attractive. The results (Fig~\ref{fig:jpfig6}) show that the more abstract an icon becomes, the less attractive it is. We can also observe that concrete icons have more success than abstract (flat) ones.
 
     \begin{figure}[H]
       \centering{
         \includegraphics[scale=0.7]{fig-report/jpfig6.png}
       }
-      \caption{Figure 6 of the study \label{jpfig6}}
+      \caption{Preferences of users amongst different icons, from \cite{jpAnalitics}}
+      \label{fig:jpfig6}
     \end{figure}
 
-	Then, an additional questionnaire, asking the users their preference between flat and skeuomoprh icons, was given. The results were used to build a correlation between previously analyzed factors and the fact that the icons where cute, vigorous, intuitive and fun. For example, to be vigorous, an icon should have a 3D effect, color, dynamic elements and novelty. The full table is present in the appendix (See Figure \ref{fig:jppage8}). This was made with the purpose of attempting to define the axis of the map as concrete-abstract and detailed-terse. See figure\ref{jpfig7}\\
+    The following results are from another questionnaire asking users their preference amongst flat and skeuomoprh icons. Those results were used to build a correlation between previously analyzed factors and properties of the icon such as ``cute'', ``vigorous'', ``intuitive'' or ``fun''. For example, ``vigorous'' icons were those with a 3D effect, colors, dynamic elements and novelty. The full table is presented in the appendices (Fig.~\ref{fig:jppage8}). The aim of this was to define the axis of the map as concrete-abstract and detailed-terse(Fig.~\ref{fig:jpfig7}).\\
 
-    Based on the map, a second questionnaire was also made to compare the preference between concrete and abstract (or skeuomorph and flat design) icons. The results shows that most people prefer concrete style icons.
+    Based on the map, another set of subjects was asked to compare concrete and abstract (or skeuomorph and flat design) icons. The results (Fig.~\ref{fig:jppage10}) show that most people prefer concrete style icons.
 
     \begin{figure}[H]
       \centering{
         \includegraphics[scale=0.5]{fig-report/jppage10.png}
       }
-      \caption{Results of the second questionnaire}\label{jppage10}
+      \caption{User preferences amongst abstract or concrete icons, from \cite{jpAnalitics}}
+      \label{fig:jppage10}
     \end{figure}
-
- \subsubsection{Conclusion of the articles}
-        The small quantity of sources make it difficult to get a conclusion, but by referring to the two first surveys, we could expect that our experiment would lead to a preference of the old, concrete style, where people know how to make it work in comparison to a new flat design where they will not find they marks.
 
 \section{Conclusion}
 
@@ -476,7 +485,7 @@ Skeuomorph designs were the norm when touch-based devices were first introduced 
 
 While skeuomorphism worked well for non-technical people thanks to their immediate conceptual model, the shift to Flat forces application creators to concentrate even more on the design of their application, as it has to be intuitive. This was very clear in our experiment, where subjects instinctively chose the skeuomorph application over the Flat one, which offered more features but seemed complex to use. When using the flat application, our subjects often missed some of the more advanced features and seemed confused when asked to use them, highlighting a weak conceptual model.\\
 
-We find similar results in other studies: flat-design is not sufficient to provide complete usability and can be even be worse than skeuomorphism in some cases. However, people are tired of skeuormophic design and tends to respond positively to flat,design. In our opinion, application developer should follow the current flat design trend without forgetting the needs of a intuitive conceptual model which is harder to achieve with design principles. 
+We find similar results in other studies: flat-design is not sufficient to provide complete usability and can be even be worse than skeuomorphism in some cases. However, people are tired of skeuormophic design and tends to respond positively to flat,design. In our opinion, application developers should follow the current Flat design trend without forgetting the needs of a intuitive conceptual model, which is harder to achieve with such designs.
 \newpage
 \appendix
 
